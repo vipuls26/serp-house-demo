@@ -1,5 +1,5 @@
 <template>
-    <div class="py-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16 py-12">
         <h2 class="text-dark text-bolder text-center text-2xl md:text-3xl mx-auto pb-4">
             What Do Our Customers Say?
         </h2>
