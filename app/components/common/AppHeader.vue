@@ -5,7 +5,7 @@
 
                 <div class="flex shrink-0 items-center">
                     <a href="/" class="flex items-center justify-center font-bold">
-                        <img src="/images/serphouse-logo.png" class="h-10 lg:h-14 w-auto" alt="logo" />
+                        <BaseLogo />
                     </a>
 
                 </div>
@@ -34,15 +34,17 @@
                     <span class="h-4 w-px bg-gray-200"></span>
 
                     <a href="#" class="hover:text-indigo-500 transition">Contact Sales</a>
-                    <a href="#" class="flex items-center space-x-1 text-indigo-500 hover:text-indigo-600 transition">
+
+                    <NuxtLink to="/auth/login"
+                        class="flex items-center space-x-1 text-indigo-500 hover:text-indigo-600 transition">
                         <span>Login</span>
                         <i class="pi pi-angle-right text-xs"></i>
-                    </a>
+                    </NuxtLink>
 
-                    <a href="#"
+                    <NuxtLink to="/auth/register"
                         class="bg-indigo-500 hover:bg-indigo-600 text-white font-medium px-5 py-2.5 rounded-full transition shadow-sm">
                         Free Sign Up
-                    </a>
+                    </NuxtLink>
                 </div>
 
                 <div class="lg:hidden flex items-center space-x-4">
@@ -50,10 +52,10 @@
 
                         <i :class="['pi', isOpen ? 'pi-times' : 'pi-bars', 'text-2xl']"></i>
                     </button>
-                    <a href="#"
+                    <NuxtLink to="/auth/register"
                         class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-3 py-2 rounded-full transition shadow-sm">
                         Free Sign Up
-                    </a>
+                    </NuxtLink>
 
                 </div>
 
@@ -88,7 +90,7 @@
 
             <a href="#" class="block py-2 hover:text-indigo-500">Contact Sales</a>
 
-            <a href="#" class="block py-2 text-indigo-500">Login</a>
+            <a href="/auth/login" class="block py-2 text-indigo-500">Login</a>
 
         </div>
     </nav>
@@ -96,6 +98,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import BaseLogo from '../reusbale/BaseLogo.vue';
 
 const isOpen = ref(false);
 

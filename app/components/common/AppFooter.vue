@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import BaseLogo from '../reusbale/BaseLogo.vue';
+
+</script>
+
 <template>
 
     <div class="bg-violet-950 w-full">
@@ -8,7 +13,7 @@
 
                 <div class="w-full lg:w-5/12">
 
-                    <img src="/images/serphouse-logo.png" class="h-14 w-auto" alt="SERPHouse Logo" />
+                    <BaseLogo />
 
                     <div class="mt-5 space-y-5">
 
@@ -57,7 +62,7 @@
                             <p><a href="#" class="hover:underline">Bing API</a></p>
                             <p><a href="#" class="hover:underline">Yahoo API</a></p>
                         </div>
-                        <hr class="border-white/20 lg:hidden">
+                        <hr class="border-white/20 md:hidden">
 
 
                         <div class="text-white space-y-3">
@@ -98,7 +103,7 @@
                             </div>
                         </div>
 
-                        <hr class="border-white/20 lg:hidden">
+                        <hr class="border-white/20 md:hidden">
 
                         <div class="text-white space-y-3">
                             <p class="font-bold">Features</p>
