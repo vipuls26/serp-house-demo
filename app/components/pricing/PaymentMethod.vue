@@ -1,5 +1,24 @@
 <template>
 
+    <!-- payment method -->
+    <section class="px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl pt-12 lg:pt-14 xl:pt-16">
+            <div class="mx-auto w-full max-w-2xl rounded-[14px] border border-gray-400 px-5 py-4 md:px-12 md:py-5">
+                <div class="flex flex-wrap items-center justify-center gap-y-6 gap-x-2 md:flex-nowrap md:justify-start">
+                    <p class="text-center text-xl font-medium lg:text-4">
+                        We accept these payment methods:
+                    </p>
+                    <div class="flex items-center gap-4 pr-4">
+                        <img src="/images/pricing/visa-logo.png" class="w-full max-w-16" alt="visa logo">
+                        <img src="/images/pricing/mastercard-logo.png" class="max-h-10 w-full max-w-16"
+                            alt="mastercard logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- use by deveopler -->
     <section class="px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-16">
 
@@ -53,47 +72,4 @@
         </div>
     </section>
 
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16 py-12">
-
-        <div class="rounded-2xl px-8 py-12 lg:px-12 lg:py-14">
-
-            <div class="flex flex-row lg:items-center lg:justify-between gap-10">
-
-                <div class="max-w-full">
-                    <h1 class="text-center text-2xl">
-                        How SERP API Works?
-                    </h1>
-
-                    <p class="text-center wrap-break-word text-xl text-slate-600 py-4 pb-16">
-                        Unveil the magic of SERP scrapers and discover how search engine result API work. Learn how
-                        they
-                        can transform your SEO strategy.
-                    </p>
-
-                    <img src="/images/homePage/serp-api-working.png" alt="serp-house working api" />
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="bg-violet-500 px-6 py-5">
-        <div class="mx-auto max-w-6xl">
-            <div class="flex flex-col items-center text-center gap-4
-                   md:flex-row md:justify-between md:text-left">
-
-                <p class="text-lg font-medium text-white">
-                    Here's How SERP API Works:
-                </p>
-
-                <a href="#" class="inline-flex items-center gap-2 border-b border-white pb-1 text-white font-semibold">
-                    <span>Explore How It Works!</span>
-                    <i class="pi pi-arrow-right"></i>
-                </a>
-
-            </div>
-        </div>
-    </div>
 </template>

@@ -26,7 +26,6 @@
 
 <script setup>
 import ContactBanner from './ContactBanner.vue';
-import ContactFooter from './ContactFooter.vue';
 import ContactForm from './ContactForm.vue';
 
 </script>

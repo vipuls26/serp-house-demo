@@ -1,7 +1,7 @@
 <script setup>
 import BaseButton from '../ui/BaseButton.vue';
-import BaseFloatingInput from '../ui/BaseFloatingInput.vue';
 import BaseFloatingTextarea from '../ui/BaseFloatingTextarea.vue';
+import BaseInput from '../ui/BaseInput.vue';
 
 const form = reactive({
     firstName: '',
@@ -16,41 +16,42 @@ const form = reactive({
 
 
 
-     <form novalidate @submit.prevent="handleSubmit">
-    
+    <form novalidate @submit.prevent="handleSubmit" class="space-y-3">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 space-y-4">
-            <BaseFloatingInput
-                id="first_name"
-                label="First Name"
-                v-model="form.firstName"
-            />
 
-            <BaseFloatingInput
-                id="last_name"
-                label="Last Name"
-                v-model="form.lastName"
-            />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 space-x-4">
+
+
+            <BaseInput name="firstname" id="firstname" type="text" placeholder="First Name" />
+
+            <BaseInput name="lastname" id="lastname" type="text" placeholder="Last Name" />
+
         </div>
 
-        <BaseFloatingInput
-            id="email"
-            type="email"
-            label="Email ID"
-            v-model="form.email"
-        />
+        <BaseInput id="email" type="email" placeholder="Email Address" />
 
-        <BaseFloatingTextarea
-            id="message"
-            label="Message"
-            v-model="form.message"
-        />
+        <BaseInput id="message" placeholder="Message" />
 
-        <BaseFloatingInput
-            id="requirement"
-            label="Requirement per month e.g. 500k, 1M etc"
-            v-model="form.requirement"
-        />
+        <BaseInput id="requirement" placeholder="Requirement per month e.g. 500k, 1M etc" type="text" />
+
+
+        <div class="flex w-full items-center justify-between pt-1 smx:pt-2">
+            <label class="flex items-center gap-2 cursor-pointer">
+
+                <BaseInput name="term_condition" type="checkbox" />
+
+                <span class="text-sm text-slate-500 leading-5">
+                    By checking this box, you agree to our
+                    <NuxtLink to="/#" class="text-violet-500 underline">
+                        Terms of Service
+                    </NuxtLink>
+                    and
+                    <NuxtLink to="/#" class="text-violet-500 underline">
+                        Privacy Policy
+                    </NuxtLink>
+                </span>
+            </label>
+        </div>
 
         <BaseButton label="Submit" varient="tertiary" />
 

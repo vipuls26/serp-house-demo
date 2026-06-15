@@ -13,6 +13,7 @@ import SerpHouseWork from '~/components/dashboard/SerpHouseWork.vue';
 </script>
 
 <template>
+    
     <div class="">
 
         <!-- serp api -->

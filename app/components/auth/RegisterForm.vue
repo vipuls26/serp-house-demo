@@ -1,86 +1,67 @@
 <script setup>
 import BaseButton from '../ui/BaseButton.vue';
 import BaseInput from '../ui/BaseInput.vue';
-
-
-
-const formData = ref({
-    name: '',
-    email: '',
-    password: '',
-    password_confirmation: '',
-    term_condition: ''
-});
-
-const handleSubmit = () => {
-    console.log('Register form submitted', formData.value);
-};
+import BaseLogo from '../reusbale/BaseLogo.vue';
 
 </script>
 
 <template>
+    <div class="w-full max-w-md">
+
+        <div class="block md:hidden mb-6">
+            <div class="flex justify-center">
+                <BaseLogo />
+            </div>
+        </div>
+
+        <div>
+            <h1 class="text-2xl sm:text-3xl font-medium text-slate-900">
+                Create Your Account
+            </h1>
+
+            <p class="mt-2 text-sm text-slate-500">
+                Create an account to start using our platform.
+            </p>
+        </div>
+
+        <form novalidate @submit.prevent="handleSubmit" class="mt-6 space-y-4">
+
+            <BaseInput id="name" name="name" type="text" label="Name" placeholder="Enter Name" />
+
+            <BaseInput id="email" name="email" type="email" label="Email Address" placeholder="Enter E-Mail Address" />
+
+            <BaseInput id="password" name="password" type="password" label="Password" placeholder="Enter Password" />
+
+            <BaseInput id="password_confirmation" name="password_confirmation" type="password" label="Confirm Password"
+                placeholder="Enter Confirm Password" />
+
+            <label class="flex items-start gap-3 cursor-pointer">
+                <BaseInput name="term_condition" type="checkbox" />
+
+                <span class="text-sm text-slate-500 leading-5">
+                    I agree to the
+                    <NuxtLink to="/#" class="text-blue-600 hover:underline">
+                        Terms of Service
+                    </NuxtLink>
+                    and
+                    <NuxtLink to="/#" class="text-blue-600 hover:underline">
+                        Privacy Policy
+                    </NuxtLink>
+                </span>
+            </label>
 
 
-    <div class="flex flex-col py-8 px-4 sm:px-8 md:py-18 md:px-8 lg:px-12 gap-5">
-
-        <p class="text-3xl font-medium text-slate-900">Create Your Account</p>
-
-        <p class="text-gray-700">Set up your SERPHouse account to start accessing high volume SERP APIs. </p>
-
-
-        <form novalidate @submit.prevent="handleSubmit">
-
-            <!-- name -->
-            <div class="px-4">
-                <BaseInput v-model="formData.name" type="text" id="name" label="Name" placeholder="Enter Name" />
+            <div class="flex justify-center">
+                <BaseButton label="Register" button="submit" class="w-full" />
             </div>
 
-            <!-- email -->
-            <div class="px-4">
-                <BaseInput v-model="formData.email" type="email" id="email" label="Email Address"
-                    placeholder="Enter E-Mail Address" />
-            </div>
-
-            <!-- password -->
-            <div class="px-4">
-                <BaseInput v-model="formData.password" type="password" id="password" label="Password"
-                    placeholder="Enter Password" />
-            </div>
-
-            <!-- confirm password -->
-            <div class="px-4">
-                <BaseInput v-model="formData.password_confirmation" type="password" id="password_confirmation"
-                    label="Confirm Password" placeholder="Enter Confirm Password" />
-            </div>
-
-            <!-- terms and condition -->
-            <div class="pt-4">
-                <BaseInput v-model="formData.term_condition" type="checkbox" />
-                
-                    <span class="text-sm text-slate-500">
-                        I agree to the
-                        <NuxtLink to="/#" class="text-blue-600">Terms of Service</NuxtLink>
-                        and
-                        <NuxtLink to="/#" class="text-blue-600">Privacy Policy</NuxtLink>
-                    </span>
-                
-
-            </div>
-
-
-            <!-- button -->
-            <div class="flex justify-center pt-14">
-                <BaseButton label="Register" button="submit" />
-            </div>
-
-            <!-- registration link -->
-            <div class="flex justify-center pt-8">
-                <p class="text-sm">
+            <div class="flex justify-center pt-2">
+                <span class="text-sm text-slate-600">
                     Already have an account?
-                    <NuxtLink to="/auth/login" class="underline font-semibold text-slate-700">
+                    <NuxtLink to="/auth/login" class="font-semibold text-slate-700 underline">
                         Sign in
                     </NuxtLink>
-                </p>
+                </span>
             </div>
 
         </form>

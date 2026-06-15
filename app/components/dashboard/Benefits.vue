@@ -9,18 +9,19 @@ import BaseStart from '../reusbale/BaseStart.vue';
         <div class="space-y-16 py-8">
             <div class="space-y-24">
 
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
-                    <div class="w-full lg:w-1/2 flex justify-center">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+
+                    <div class="w-full md:w-1/2 flex justify-center">
                         <img src="/images/homePage/serp-data.png" alt="Real-Time SERP Data"
                             class="w-full max-w-xl object-contain drop-shadow-sm">
                     </div>
 
-                    <div class="w-full lg:w-1/2 space-y-6">
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <h2 class="text-xl md:text-3xl lg:text-5xl text-blue-950 text-center">
                             Real-Time SERP Data From All Major search Engines
                         </h2>
 
-                        <p class="text-gray-600 text-lg leading-relaxed max-w-lg">
+                        <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-center">
                             Obtain real-time SERP data from all major search APIs, ensuring up-to-date insights for
                             accurate
                             performance tracking.
@@ -28,61 +29,92 @@ import BaseStart from '../reusbale/BaseStart.vue';
 
                         <div class="space-y-4 pt-2">
                             <div class="flex items-center gap-3">
-                                <img src="/images/homePage/check-circle.png" alt="check" class="w-6 h-6">
-                                <a href="#" class="text-gray-800 font-semibold">Google Search API</a>
+                                <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
+                                <a href="#" class="text-gray-800 text-sm">Google Search API</a>
                             </div>
                             <div class="flex items-center gap-3">
-                                <img src="/images/homePage/check-circle.png" alt="check" class="w-6 h-6">
-                                <a href="#" class="text-gray-800 font-semibold">Bing Search API</a>
+                                <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
+                                <a href="#" class="text-gray-800 text-sm">Bing Search API</a>
                             </div>
                             <div class="flex items-center gap-3">
-                                <img src="/images/homePage/check-circle.png" alt="check" class="w-6 h-6">
-                                <a href="#" class="text-gray-800 font-semibold">Yahoo Search API</a>
+                                <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
+                                <a href="#" class="text-gray-800 text-sm">Yahoo Search API</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
 
-                <div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-12">
-                    <div class="w-full lg:w-1/2 flex justify-center">
-                        <img src="/images/homePage/specific-devices.png" alt="Specific Devices"
-                            class="w-full max-w-xl object-contain drop-shadow-sm">
-                    </div>
-
-                    <div class="w-full lg:w-1/2 space-y-6">
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <h2 class="text-xl md:text-3xl lg:text-5xl text-blue-950 text-center">
                             Access search results tailored to specific devices
                         </h2>
-                        <p class="text-gray-600 text-lg leading-relaxed max-w-lg">
-                            Get accurate search engine results tailored to specific devices, including desktop, mobile,
-                            and
-                            tablet, to ensure a comprehensive understanding of user experience.
+                        <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-center">
+                            Use device-specific data to refine your SEO strategies and optimize performance across
+                            platforms.
                         </p>
+
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-center gap-3">
+                                <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
+                                <a href="#" class="text-gray-800 text-sm">Desktop And Mobile Devices Targeting.</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
+                                <a href="#" class="text-gray-800 text-sm">Gain Insights Into Your Content’s Rankings
+                                    Across Various Devices.</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2 flex justify-center">
+                        <img src="/images/homePage/specific-devices.png" alt="Specific Devices"
+                            class="w-full max-w-xl object-contain drop-shadow-sm">
                     </div>
                 </div>
 
 
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
-                    <div class="w-full lg:w-1/2 flex justify-center">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div class="w-full md:w-1/2 flex justify-center">
                         <img src="/images/homePage/geographic-location.png" alt="Geographic Location"
                             class="w-full max-w-xl object-contain drop-shadow-sm">
                     </div>
 
-                    <div class="w-full lg:w-1/2 space-y-6">
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">
-                            Accurate Data Based on Geographic Location
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <h2 class="text-xl md:text-3xl lg:text-5xl text-blue-950 text-center">
+                            Access search results from any geographic location
+
                         </h2>
-                        <p class="text-gray-600 text-lg leading-relaxed max-w-lg">
-                            Retrieve location-specific search engine results pages (SERPs) from any region, allowing you
-                            to
-                            track and analyze localized rankings effectively.
+                        <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-center">
+                            We use Google Geographical Targeting so that you can use it as a data source and Boost local
+                            SEO efforts.
                         </p>
+
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-center gap-3">
+                                <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
+                                <a href="#" class="text-gray-800 text-sm">Get Localised Results From 245 Countries.</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
+                                <a href="#" class="text-gray-800 text-sm">Target Country, State, City, Municipality And
+                                    More.</a>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
+                                <a href="#" class="text-gray-800 text-sm">Location-Specific Insights For Optimal
+                                    Decision-Making.</a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col items-center justify-center text-center p-6 max-w-2xl mx-auto gap-4">
+            <div class="flex flex-col items-center justify-center text-center p-6 max-w-2xl mx-auto gap-2">
                 <div>
                     <h2 class="text-2xl text-gray-900">Industries that Can Benefits from SERPHouse</h2>
                 </div>
@@ -93,7 +125,7 @@ import BaseStart from '../reusbale/BaseStart.vue';
             </div>
 
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
 
                 <div
                     class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 transition-colors duration-200">
@@ -130,7 +162,7 @@ import BaseStart from '../reusbale/BaseStart.vue';
             </div>
 
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto p-4">
 
                 <div
                     class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center h-full transition-colors duration-200">
@@ -142,7 +174,7 @@ import BaseStart from '../reusbale/BaseStart.vue';
 
                 <div
                     class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center h-full transition-colors duration-200">
-                    <p class="font-semibold mt-3">5</p>
+                    <p class="font-semibold mt-3 text-6xl text-blue-950">5</p>
                     <span>
                         <BaseStart />
                         <BaseStart />

@@ -1,95 +1,95 @@
 <script setup>
 import BaseDescription from '../reusbale/BaseDescription.vue';
-import BaseStart from '../reusbale/BaseStart.vue';
 import BaseLink from '../ui/BaseLink.vue';
 
 </script>
 
 <template>
-    <section class="">
-        <div class="max-w-7xl mx-auto px-6 py-16">
+    <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="grid items-center gap-12 md:grid-cols-2">
 
-            <div class="flex flex-col-reverse lg:flex-row items-center gap-12">
+                <div class="md:py-6">
+                    <div class="flex flex-wrap items-center justify-center gap-[15px] md:justify-start">
 
-                <div class="w-full lg:w-1/2">
-
-                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
-
-                        <span class="text-lg font-semibold">
+                        <p class="font-medium text-slate-900">
                             Excellent
-                        </span>
+                        </p>
 
-                        <span class="flex items-center gap-1">
-                            <BaseStart />
-                            <BaseStart />
-                            <BaseStart />
-                            <BaseStart />
-                            <BaseStart />
-                        </span>
+                        <NuxtLink to="https://www.trustpilot.com/review/serphouse.com" target="_blank"
+                            class="flex items-center gap-[15px]">
+                            <img src="/images/homePage/stars-4.5.svg" alt="Trustpilot"
+                                class="w-full max-w-28 min-[1441px]:max-w-36" />
 
-                        <span class="text-lg">
-                            4.7 Review On
-                        </span>
+                            <p class="font-medium text-slate-900">
+                                4.7 review on
+                            </p>
+                        </NuxtLink>
 
-                        <span class="flex items-center gap-2 text-lg font-semibold">
-                            <BaseStart />
-                            Trustpilot
-                        </span>
+                        <div class="flex items-center gap-2">
+                            <img src="/images/homePage/one-star.png" alt="Trustpilot" class="max-w-6" />
+
+                            <p class="font-medium text-slate-900">
+                                Trustpilot
+                            </p>
+                        </div>
 
                     </div>
 
-                    <div class="mt-8 flex flex-col xl:flex-row xl:items-center gap-4">
-                        <h1 class="text-5xl md:text-6xl font-bold text-[#26175c] leading-none">
+                    <div class="mt-6 flex flex-wrap items-center justify-center gap-4 md:justify-start">
+
+                        <h1 class="text-center text-5xl font-bold leading-none text-blue-950 md:text-left md:text-6xl">
                             SERP API
                         </h1>
 
-                        <div
-                            class="inline-flex items-center justify-center border border-violet-500 rounded-full px-6 py-2 w-fit">
-                            <p>Yahoo</p>
+                        <div class="inline-flex items-center gap-2 rounded-full border border-violet-500 px-4 py-2.5">
+                            <img src="/images/homePage/bing-btn.png" alt="Yahoo" class="h-6 w-6" />
+
+                            <span class="font-medium text-slate-900">
+                                Yahoo
+                            </span>
                         </div>
+
                     </div>
 
-
-                    <h2 class="mt-8 text-2xl font-semibold text-slate-800 leading-relaxed">
+                    <h2 class="mt-4 text-center text-lg leading-relaxed text-slate-700 md:text-left">
                         Your Shortcut to SERP Data Insights With Our SERP Scraper.
                     </h2>
 
 
-                    <div class="mt-8 space-y-5">
+                    <div class="mt-6 space-y-4">
 
-                        <div class="flex gap-4">
-
+                        <div class="flex items-start gap-3">
                             <BaseDescription />
-                            <p class="text-lg text-slate-700">
+                            <p class="text-slate-700 m:text-md">
                                 Reduce operational costs on data extraction with no maintenance concerns.
                             </p>
                         </div>
 
-                        <div class="flex gap-4">
+                        <div class="flex items-start gap-3">
                             <BaseDescription />
-                            <p class="text-lg text-slate-700">
+                            <p class="text-slate-700">
                                 Real-time SERP data with geo and device targeting, delivered in JSON and HTML.
                             </p>
                         </div>
 
-                        <div class="flex gap-4">
+                        <div class="flex items-start gap-3">
                             <BaseDescription />
-                            <p class="text-lg text-slate-700">
+                            <p class="text-slate-700">
                                 High exceptional performance at any scale.
                             </p>
                         </div>
 
-                        <div class="flex gap-4">
+                        <div class="flex items-start gap-3">
                             <BaseDescription />
-                            <p class="text-lg text-slate-700">
+                            <p class="text-slate-700">
                                 Pay on successful data response.
                             </p>
                         </div>
 
                     </div>
 
-
-                    <div class="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+                    <div class="mt-6 flex flex-col gap-3 min-[400px]:flex-row min-[400px]:flex-wrap">
 
                         <div class="flex items-center gap-2">
                             <i class="pi pi-check text-violet-500"></i>
@@ -114,32 +114,28 @@ import BaseLink from '../ui/BaseLink.vue';
 
                     </div>
 
-
-                    <div class="mt-8 flex flex-wrap items-center gap-6">
-
-                        <BaseLink name="Activate Free Trail" link="/auth/register" />
+                    <div class="mt-8 flex flex-wrap items-center justify-center gap-6 md:justify-start">
+                        <BaseLink name="Activate Free Trial" link="/auth/register" />
 
                         <BaseLink name="View Pricing" varient="tertiary" link="/pricing" />
-
                     </div>
 
+                    <div class="mt-6 flex items-center justify-center gap-3 md:justify-start">
+                        <img src="/images/homePage/credit-card-off.png" alt="No Credit Card Required" class="h-6 w-6" />
 
-                    <div class="mt-6 flex items-center gap-3">
-                        <img src="/images/homePage/credit-card-off.png" alt="" class="w-6 h-6">
-                        <span class="text-lg text-slate-700">
+                        <span class="text-slate-700">
                             No Credit Card Required
                         </span>
                     </div>
+
                 </div>
 
-
-                <div class="w-full lg:w-1/2">
-                    <img src="/images/homePage/serp-apis.webp" alt="SERP API" class="w-full h-auto">
+                <div class="flex justify-center">
+                    <img src="/images/homePage/serp-apis.webp" alt="SERP API"
+                        class="w-full max-w-sm md:max-w-xs lg:max-w-md" />
                 </div>
 
             </div>
-
         </div>
     </section>
-
 </template>

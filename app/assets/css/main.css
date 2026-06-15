@@ -1,2 +1,12 @@
 @import "tailwindcss";
+
 @import 'primeicons/primeicons.css';
+
+@theme {
+    --breakpoint-xs: 320px;
+    --breakpoint-smx: 375px;
+    --breakpoint-m: 425px;
+}
+
+@import "./font.css";
+

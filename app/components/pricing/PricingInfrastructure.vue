@@ -11,7 +11,7 @@ import BaseCheck from '../reusbale/BaseCheck.vue';
 
             <div class="w-full lg:w-1/2">
 
-                <h2 class="text-3xl lg:text-4xl font-bold text-[#1e2260]">
+                <h2 class="text-4xl lg:text-4xl text-blue-950">
                     Get a maintenance-free scraping infrastructure
                 </h2>
 
@@ -28,7 +28,7 @@ import BaseCheck from '../reusbale/BaseCheck.vue';
                         </span>
 
                         <p class="text-slate-700">
-                            Reduce operational costs on data extraction with no maintenance concerns.
+                            No Need For Custom Scrapers, Parsers, Or Browsers
                         </p>
                     </div>
 
@@ -38,7 +38,7 @@ import BaseCheck from '../reusbale/BaseCheck.vue';
                         </span>
 
                         <p class="text-slate-700">
-                            Real-time SERP data with geo and device targeting, delivered in JSON and HTML.
+                            Let Us Handle CAPTCHAS And Overcome IP Blocks For You
                         </p>
                     </div>
 
@@ -48,17 +48,7 @@ import BaseCheck from '../reusbale/BaseCheck.vue';
                         </span>
 
                         <p class="text-slate-700">
-                            High exceptional performance at any scale.
-                        </p>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <span class="shrink-0 mt-1">
-                            <BaseCheck />
-                        </span>
-
-                        <p class="text-slate-700">
-                            Pay on successful data response.
+                            Allocate your resources towards analyzing data
                         </p>
                     </div>
 

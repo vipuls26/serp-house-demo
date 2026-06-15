@@ -1,7 +1,7 @@
 <template>
 
     <div class="min-h-screen flex md:flex-row flex-col">
-        <div class="flex-1 bg-violet-600">
+        <div class="flex-1 bg-violet-500">
         </div>
 
         <div class="flex-1 bg-slate-100">
