@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import BaseButton from '../ui/BaseButton.vue';
+import BaseLink from '../ui/BaseLink.vue';
 
 </script>
 
 <template>
-
-    <div class="mx-auto max-w-8xl px-4 py-10 sm:px-6 lg:px-8">
-
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16 py-12">
         <div class="flex justify-center pb-12">
-            <BaseButton varient="primary" label="Dive into Use Cases"/>
+            <BaseLink varient="primary" link="/" name="Dive into Use Cases"/>
         </div>
 
         <div class="flex flex-wrap justify-between mx-auto">

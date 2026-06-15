@@ -42,7 +42,7 @@
                     </NuxtLink>
 
                     <NuxtLink to="/auth/register"
-                        class="bg-indigo-500 hover:bg-indigo-600 text-white font-medium px-5 py-2.5 rounded-full transition shadow-sm">
+                        class="bg-[#8460E5] text-white font-medium rounded-[26px] max-w-[173px] py-[10px] px-[20px] transition shadow-sm">
                         Free Sign Up
                     </NuxtLink>
                 </div>
@@ -53,18 +53,17 @@
                         <i :class="['pi', isOpen ? 'pi-times' : 'pi-bars', 'text-2xl']"></i>
                     </button>
                     <NuxtLink to="/auth/register"
-                        class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-3 py-2 rounded-full transition shadow-sm">
+                        class="bg-[#8460E5] text-white font-semibold px-3 py-2 rounded-full transition shadow-sm">
                         Free Sign Up
                     </NuxtLink>
 
                 </div>
 
             </div>
-
         </div>
 
 
-        <div v-show="isOpen" class="lg:hidden absolute w-full bg-white border-b border-gray-200 shadow-lg left-3">
+        <div v-show="isOpen" class="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg mx-auto pl-3">
 
             <button class="w-full text-left py-2 text-indigo-500 hover:text-indigo-600">
                 <span>Product</span>

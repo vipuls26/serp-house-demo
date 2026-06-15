@@ -1,5 +1,5 @@
 <template>
-    <BaseLogo />
+    <img src="/images/serphouse-logo.png" class="h-12 lg:h-14 w-auto" alt="logo" />
 
     <img src="/images/side-image.png" class="max-w-xs md:w-75 md:p-2" />
 
