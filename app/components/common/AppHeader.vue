@@ -13,10 +13,8 @@
 
                 <div class="hidden lg:flex items-center gap-4 text-gray-600">
 
-                    <button class="flex items-center space-x-1 text-violet-500">
-                        <span>Product</span>
-                        <i class="pi pi-angle-down text-xs ml-1"></i>
-                    </button>
+                    <BaseDropdown :item="productMenu" />
+
 
                     <button class="flex items-center space-x-1">
                         <span>Features</span>
@@ -66,10 +64,7 @@
         <div v-show="isOpen"
             class="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg mx-auto pl-3">
 
-            <button class="w-full text-left py-2 text-violet-500">
-                <span>Product</span>
-                <i class="pi pi-angle-down text-xs ml-1"></i>
-            </button>
+            <BaseDropdown :item="productMenu" />
 
             <button class="w-full text-left py-2 hover:text-violet-500">
                 <span>Features</span>
@@ -101,10 +96,69 @@
 <script setup>
 
 import BaseLogo from '../reusbale/BaseLogo.vue';
+import BaseDropdown from '../ui/BaseDropdown.vue';
 
 const isOpen = ref(false);
 
 const toggleMenu = () => {
     isOpen.value = !isOpen.value;
 };
+
+
+const productMenu = {
+    label: "Products",
+    children: [
+        {
+            label: "SERP API",
+            link: "/api/serp/serp-api",
+            // image: "/images/navBar/serp-api-logo.png"
+        },
+        {
+            label: "Google API",
+            // image: "/images/navBar/google-api.png",
+            children: [
+                { label: "Google SERP API", link: "#" },
+                { label: "Google News Api", link: "#" },
+                { label: "Google Job API", link: "#" },
+                { label: "Google Videos API", link: "#" },
+                { label: "Google Images API", link: "#" },
+                { label: "Google Shopping API", link: "#" },
+                { label: "Google Short Video API", link: "#" },
+                { label: "Google Autocomplete API", link: "#" },
+                { label: "Google Forums API", link: "#" },
+                { label: "Google Locak API", link: "#" }
+            ]
+        },
+        {
+            label: "Bing Api",
+            image: "/images/navBar/bing-api.png",
+            children: [
+                { label: "Bing SERP API", link: "#" },
+                { label: "Bing News API", link: "#" },
+                { label: "Bing Images API", link: "#" }
+            ]
+        },
+        {
+            label: "Yahoo Api",
+            image: "/images/navBar/yahoo-api.png",
+            children: [
+                { label: "Yahoo SERP API", link: "#" },
+                { label: "Yahoo News API", link: "#" },
+                { label: "Yahoo Images API", link: "#" }
+            ]
+        }
+    ]
+}
+
+
+const featureMenu = [
+    {
+        label: "SERP TYPE",
+        link: "#"
+    },
+    {
+        label: "Mobile & Desktop"
+    }
+]
+
 </script>
