@@ -1,10 +1,9 @@
 <template>
 
     <section class="px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 py-16">
+        <div class="mx-auto w-full px-8 sm:px-6 lg:px-8 xl:px-32 space-y-16 py-12">
 
-
-            <h2 class="text-center text-slate-900 text-3xl">
+            <h2 class="text-center text-blue-950 s:text-sm m:text-base l:text-lg md:text-xl">
                 Used by the best developers and teams around the world
             </h2>
 
@@ -53,24 +52,29 @@
         </div>
     </section>
 
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16 py-12">
+    <div class="mx-auto w-full px-4 sm:px-6 lg:px-8 xl:px-32 space-y-16 py-12">
 
-        <div class="rounded-2xl px-8 py-12 lg:px-12 lg:py-14">
+        <div class="rounded-2xl py-12 lg:px-12 lg:py-14">
 
-            <div class="flex flex-row lg:items-center lg:justify-between gap-10">
+            <div class="flex flex-row items-center justify-center gap-10">
 
                 <div class="max-w-full">
-                    <h1 class="text-center text-2xl">
+                    <h1 class="text-center text-xl text-blue-950">
                         How SERP API Works?
                     </h1>
 
-                    <p class="text-center wrap-break-word text-xl text-slate-600 py-4 pb-16">
+                    <p class="text-center wrap-break-word text-sm text-slate-600 py-4 pb-16">
                         Unveil the magic of SERP scrapers and discover how search engine result API work. Learn how
                         they
                         can transform your SEO strategy.
                     </p>
 
-                    <img src="/images/homePage/serp-api-working.png" alt="serp-house working api" />
+
+                    <!-- tablet + desktop view image -->
+                    <img src="/images/homePage/serp-api-working.png" alt="serp-house working api"  class="hidden md:block" />
+
+                    <!-- mobile view image -->
+                    <img src="/images/homePage/serp-api-working-mobile.png" alt="serp-house working api" class="block mx-auto md:hidden" />
                 </div>
 
             </div>
