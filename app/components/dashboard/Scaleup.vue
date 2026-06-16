@@ -1,18 +1,14 @@
 <template>
-    <div class="py-8">
-        <h2 class="text-dark text-bolder text-center text-3xl mx-auto">
-            Scale Up Your Business with
-        </h2>
 
-        <h2 class="text-dark text-bolder text-center text-3xl mx-auto">
-            SERPHouse
+    <div class="mx-auto w-full px-2 sm:px-6 lg:px-8 xl:px-32  space-y-4">
+        <h2 class="text-blue-950 text-center text-2xl font-medium">
+            Scale Up Your Business with SERPHouse
         </h2>
-
 
         <div
-            class="flex flex-col md:flex-row space-y-3 space-x-3 md:space-y-0 md:space-x-6 justify-center items-center p-4">
+            class="flex flex-col md:flex-row md:space-x-6 justify-center items-center">
 
-            <div class="justify-start">
+            <div class="justify-start space-y-2">
                 <p class="flex items-center">
                     <span class="mr-2">
                         <BaseTick />
@@ -32,20 +28,25 @@
 
         </div>
 
-        <!-- button -->
-        <div class="flex flex-row space-x-6 justify-center py-8">
+        <div class="flex flex-col l:flex-row justify-center items-center space-y-4 l:space-y-0 l:space-x-4 py-2 pb-8">
 
-            <BaseLink link="auth/register" name="Try free for 1 week" varient="primary" />
-            <BaseLink link="enterprise-custom-plan-offering" name="Contact sales" varient="secondary" />
+            <NuxtLink to="/auth/register"
+                class="bg-violet-500 text-white font-medium text-sm text-center px-6 py-2.5 rounded-full">
+                Try free for 1 week
+            </NuxtLink>
+
+            <NuxtLink to="/enterprise-custom-plan-offering"
+                class="border border-violet-500 text-violet-500 hover:bg-violet-50 font-medium text-sm text-center px-8 py-3 rounded-full">
+                Contact sales
+            </NuxtLink>
+
         </div>
-
 
     </div>
 </template>
 
 <script setup>
 
-import BaseButton from '../ui/BaseButton.vue';
 import BaseTick from '../reusbale/BaseTick.vue';
-import BaseLink from '../ui/BaseLink.vue';
+
 </script>

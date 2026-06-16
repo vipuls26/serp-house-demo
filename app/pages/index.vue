@@ -21,6 +21,7 @@ import SerpHouseWork from '~/components/dashboard/SerpHouseWork.vue';
 
         <!-- serphouse work -->
          <SerpHouseWork />
+         
         <!-- benifits -->
         <Benefits />
 

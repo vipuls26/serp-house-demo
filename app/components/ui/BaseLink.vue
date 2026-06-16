@@ -1,7 +1,7 @@
 <template>
 
     <div v-if="varient === 'primary'">
-        <NuxtLink :href="link" class="bg-violet-500 text-white text-sm px-6 py-4 rounded-full font-bold">
+        <NuxtLink :href="link" class="bg-violet-500 text-white text-sm px-8 py-3 rounded-full font-bold">
             {{ name }}
         </NuxtLink>
     </div>

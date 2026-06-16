@@ -6,12 +6,12 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
 <template>
 
     <div class="bg-violet-950 w-full">
-        <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 pt-8">
 
             <div class="flex flex-col lg:flex-row justify-between gap-10">
 
 
-                <div class="w-full lg:w-5/12">
+                <div class="w-full lg:w-5/12 xl:w-5/12">
 
                     <BaseLogo />
 
@@ -23,6 +23,7 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
                         </p>
 
                         <div class="border-l-2 border-white/30">
+
                             <p class="pl-5 text-white wrap-break-word">
                                 203-208, Silver Trade Center, Near Oxygen Park,
                                 Opp. GEB Power House, Utran, Surat 394105,
@@ -49,11 +50,12 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
                 <hr class="border-white/20 lg:hidden">
 
 
-                <div class="w-full lg:w-7/12">
+                <div class="w-full lg:w-7/12 xl:w-7/12">
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
 
+                        <!-- api -->
                         <div class="text-white space-y-3">
                             <p class="font-bold">API</p>
 
@@ -65,6 +67,7 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
                         <hr class="border-white/20 md:hidden">
 
 
+                        <!-- help and support -->
                         <div class="text-white space-y-3">
                             <p class="font-bold">Help & Support</p>
 
@@ -105,6 +108,7 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
 
                         <hr class="border-white/20 md:hidden">
 
+                        <!-- feature -->
                         <div class="text-white space-y-3">
                             <p class="font-bold">Features</p>
 
@@ -166,7 +170,7 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
 
             <div class="mt-10 pt-6 border-t border-white/20">
 
-                <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div class="flex flex-col lg:flex-row gap-12">
 
                     <p class="text-white text-sm text-center sm:text-left">
                         Copyright © 2026 SERPHouse.
