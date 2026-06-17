@@ -1,20 +1,20 @@
-<template>
+    <template>
 
     <div v-if="varient === 'primary'">
-        <NuxtLink :href="link" class="bg-violet-500 text-white text-sm px-8 py-3 rounded-full font-bold">
+        <NuxtLink :to="link" class="bg-violet-500 text-white text-sm px-8 py-3 rounded-full font-bold">
             {{ name }}
         </NuxtLink>
     </div>
 
     <div v-if="varient === 'secondary'">
-        <NuxtLink :href="link" class="border border-violet-500 text-violet-500 text-sm px-12 py-4 rounded-full">
+        <NuxtLink :to="link" class="border border-violet-500 text-violet-500 text-sm px-12 py-4 rounded-full">
             {{ name }}
         </NuxtLink>
     </div>
 
 
     <div v-if="varient === 'tertiary'">
-        <NuxtLink :href="link" class="inline-flex items-center gap-2 text-violet-500 text-lg pr-3">
+        <NuxtLink :to="link" class="inline-flex items-center gap-2 text-violet-500 text-lg pr-3">
             {{ name }}
         </NuxtLink>
 
@@ -37,7 +37,8 @@ defineProps({
     varient: {
         type: String,
         default: 'primary'
-    }
+    },
+    
 })
 
 </script>
