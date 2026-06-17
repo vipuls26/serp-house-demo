@@ -1,8 +1,8 @@
 <template>
-    <div class="mx-auto w-full px-4 sm:px-6 lg:px-8 xl:px-32  space-y-16 py-12">
+      <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16 py-12">
         <div class="flex flex-col items-center justify-center text-center p-6 max-w-2xl mx-auto gap-4">
             <div>
-                <h2 class="text-xl text-blue-950">Maximize The Potential Of The SERP API</h2>
+                <h2 class="text-xl text-blue-950 lg:text-2xl xl:text-4xl">Maximize The Potential Of The SERP API</h2>
             </div>
             <div>
                 <p class="text-base text-gray-600 mt-3">Stop guessing, start knowing. Make data-driven SEO decisions with our

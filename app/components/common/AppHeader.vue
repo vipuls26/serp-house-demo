@@ -1,6 +1,6 @@
 <template>
     <nav class="relative bg-white border-b border-gray-100 shadow-sm p-2">
-        <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12">
+        <div class="mx-auto max-w-360 px-4 sm:px-6  xl:px-12">
 
             <div class="flex items-center justify-between h-16 pt-2">
 
@@ -11,7 +11,7 @@
 
                 </div>
 
-                <div class="hidden lg:flex items-center gap-4 text-gray-600">
+                <div class="hidden lg:flex items-center lg:gap-2 xl:gap-4 text-gray-600">
 
                     <BaseDropdown :item="productMenu" />
 
@@ -30,8 +30,7 @@
                     </button>
 
                     <a href="#" class="hover:text-violet-500">Documentation</a>
-                    <div class="w-0.5 bg-slate-300 h-8"></div>
-
+                    <div class="hidden xl:block w-0.5 bg-slate-300 h-8"></div>
 
                     <a href="#" class="hover:text-violet-500">Contact Sales</a>
 
@@ -41,7 +40,7 @@
                     </NuxtLink>
 
                     <NuxtLink to="/auth/register"
-                        class="bg-violet-500 text-white font-medium rounded-full max-w-43.25 lg:py-2.5 lg:px-4 xl:py-3 xl:px-8 transition shadow-sm">
+                        class="inline-flex items-center justify-center bg-violet-500 text-white font-medium rounded-full px-6 py-3 lg:px-7 lg:py-3 xl:px-8 shadow-sm">
                         Free Sign Up
                     </NuxtLink>
                 </div>
@@ -52,7 +51,7 @@
                         <i :class="['pi', isOpen ? 'pi-times' : 'pi-bars', 'text-2xl']"></i>
                     </button>
                     <NuxtLink to="/auth/register"
-                        class="bg-violet-500 text-white font-semibold px-6 py-2 rounded-full transition shadow-sm">
+                        class="inline-flex items-center justify-center bg-violet-500 text-white font-medium rounded-full px-5 py-2.5 lg:px-6 lg:py-2.5 xl:px-8 shadow-sm">
                         Free Sign Up
                     </NuxtLink>
 
@@ -117,7 +116,7 @@ const productMenu = {
             label: "Google API",
             // image: "/images/navBar/google-api.png",
             children: [
-                { label: "Google SERP API", link: "#" },
+                { label: "Google SERP API", link: "/api/" },
                 { label: "Google News Api", link: "#" },
                 { label: "Google Job API", link: "#" },
                 { label: "Google Videos API", link: "#" },
@@ -140,11 +139,11 @@ const productMenu = {
         },
         {
             label: "Yahoo Api",
-            image: "/images/navBar/yahoo-api.png",
+            // image: "/images/navBar/yahoo-api.png",
             children: [
-                { label: "Yahoo SERP API", link: "#" },
-                { label: "Yahoo News API", link: "#" },
-                { label: "Yahoo Images API", link: "#" }
+                { label: "Yahoo SERP API", link: "/api/yahoo/serp-api" },
+                { label: "Yahoo News API", link: "/api/yahoo/news-api" },
+                { label: "Yahoo Images API", link: "/api/yahoo/image-api" }
             ]
         }
     ]

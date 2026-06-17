@@ -4,16 +4,17 @@ import BaseLink from '../ui/BaseLink.vue';
 
 <template>
 
-    <div class="mx-auto w-full px-4 sm:px-6 lg:px-8 xl:px-32  space-y-16 py-12">
+    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16 py-12">
+    
         <div
-            class="mx-auto grid max-w-5xl gap-8 rounded-3xl bg-white px-6 py-10 shadow-sm md:grid-cols-[minmax(0,1.5fr)_minmax(260px,0.9fr)] md:items-center md:px-10">
+            class="mx-auto grid gap-8 rounded-3xl bg-white px-6 py-10 shadow-sm md:grid-cols-2 md:items-center md:px-10">
 
             <div>
-                <h2 class="text-center text-xl leading-tight text-blue-950 md:text-left md:text-2xl lg:text-3xl">
+                <h2 class="text-center text-xl xl:text-4xl leading-tight text-blue-950 md:text-left md:text-2xl lg:text-3xl">
                     Experience The SERP API For Yourself.
                 </h2>
 
-                <p class="text-center text-sm text-gray-500 mt-3 md:text-left">
+                <p class="text-center text-sm text-gray-500 mt-3 md:text-left xl:text-lg">
                     Explore the Scraper APIs Playground on the Oxylabs dashboard for hands-on interaction with our
                     APIs, and access detailed technical documentation for all the essential information.
                 </p>
@@ -35,11 +36,11 @@ import BaseLink from '../ui/BaseLink.vue';
         </div>
 
         <div class="mx-auto max-w-3xl space-y-4">
-            <h2 class="text-center text-xl text-blue-950">
+            <h2 class="text-center md:text-xl lg:text-2xl xl:text-4xl text-blue-950">
                 API Playground
             </h2>
 
-            <p class="text-center text-base flex justify-center text-slate-600 break-words-1">
+            <p class="text-center text-base flex justify-center text-slate-600 lg:text-xl">
                 SERPHouse effortlessly powers your SEO apps and services. Try our complete and easy to use API.
             </p>
         </div>

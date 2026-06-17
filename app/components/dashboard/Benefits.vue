@@ -1,12 +1,7 @@
-<script setup lang="ts">
-import BaseStart from '../reusbale/BaseStart.vue';
-
-</script>
-
 <template>
 
-    <div class="mx-auto w-full px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
-
+    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16 py-12">
+    
         <div class="space-y-24">
 
             <div class="flex flex-col md:flex-row items-center justify-between gap-12">
@@ -188,4 +183,5 @@ import BaseStart from '../reusbale/BaseStart.vue';
         </div>
 
     </div>
+
 </template>

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="mx-auto w-full px-4 sm:px-6 lg:px-8 xl:px-32 space-y-16 py-12">
+    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16 py-12">
 
         <div class="flex flex-col items-center justify-center text-center p-6 max-w-2xl mx-auto gap-4">
             <div>
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto">
             <div
                 class="bg-white p-6 rounded-lg ring-1 ring-gray-200 flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 ring-2xl">
                 <img src="/images/homePage/realtime-result.png" alt="Realtime" class="w-8 h-8 mb-2 object-contain">
@@ -32,9 +32,10 @@
 
             <div
                 class="bg-white p-6 rounded-lg ring-1 ring-gray-300 flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 transition-colors duration-200">
-                <img src="/images/homePage/automated-data-retrieval.png" alt="Accurate Location" class="w-8 h-8 mb-2 object-contain">
+                <img src="/images/homePage/automated-data-retrieval.png" alt="Accurate Location"
+                    class="w-8 h-8 mb-2 object-contain">
                 <h3 class="text-base text-blue-950">Accurate Location</h3>
-               <p class="text-gray-600 text-sm mt-3">Target locations realtime anywhere in the world including
+                <p class="text-gray-600 text-sm mt-3">Target locations realtime anywhere in the world including
                     City,
                     State, and
                     Country level.
@@ -45,8 +46,8 @@
             <div
                 class="bg-white p-6 rounded-lg ring-1 ring-gray-300 flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 transition-colors duration-200">
                 <img src="/images/homePage/various-data-formats.png" alt="Speed" class="w-16 h-16 mb-4 object-contain">
-                 <h3 class="text-base text-blue-950">Speed</h3>
-               <p class="text-gray-600 text-sm mt-3">Standard average response time in under 8 seconds.</p>
+                <h3 class="text-base text-blue-950">Speed</h3>
+                <p class="text-gray-600 text-sm mt-3">Standard average response time in under 8 seconds.</p>
             </div>
 
             <div
@@ -63,10 +64,10 @@
                 class="bg-white p-6 rounded-lg ring-1 ring-gray-300 flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 transition-colors duration-200">
                 <img src="/images/homePage/programmable-response.png" alt="Programmable Response"
                     class="w-16 h-16 mb-4 object-contain">
-                 <h3 class="text-base text-blue-950">Programmable Response
+                <h3 class="text-base text-blue-950">Programmable Response
 
                 </h3>
-               <p class="text-gray-600 text-sm mt-3">Extract SERP data from specialized search engines.</p>
+                <p class="text-gray-600 text-sm mt-3">Extract SERP data from specialized search engines.</p>
             </div>
 
         </div>
