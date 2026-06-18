@@ -1,6 +1,6 @@
 <template>
 
-      <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6">
+    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6">
 
         <div class="flex flex-col lg:flex-row items-center gap-8">
 
@@ -19,18 +19,18 @@
                         </span>
                         <h3 class="text-base transition-colors duration-300 overflow-hidden"
                             :class="activeFaq === 'faq1' ? 'text-violet-500' : 'text-[#494343]'">
-                            What Is The Yahoo Serp Api, And How Can It Help My Business?
+                            What Is A Bing SERP API?
                         </h3>
                     </button>
 
                     <div v-show="activeFaq === 'faq1'" class="mt-4 text-gray-600 leading-relaxed">
-                        The Yahoo SERP API is a tool that allows users to access Yahoo’s search results
-                        programmatically, delivering structured data on search rankings, ads, images, and videos.
-                        Businesses can use this API to analyze Yahoo search performance, monitor competitors, and
-                        optimize SEO strategies based on Yahoo's unique search ecosystem.
+                        A Bing SERP (Search Engine Results Page) API allows developers to fetch real-time search engine
+                        results from Bing. This includes organic results, ads, featured snippets, and other SERP
+                        features.
                     </div>
 
                 </div>
+
 
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                     <button class="w-full flex items-center justify-start text-left space-x-2.5 cursor-pointer"
@@ -42,14 +42,13 @@
 
                         <h3 class="text-base transition-colors duration-300"
                             :class="activeFaq === 'faq2' ? 'text-violet-500' : 'text-[#494343]'">
-                            What Data Can I Obtain From The Yahoo Serp Api?
+                            How Can I Integrate The Bing SERP API Into My Application?
                         </h3>
                     </button>
 
                     <div v-show="activeFaq === 'faq2'" class="mt-4 text-gray-600 leading-relaxed">
-                        The Yahoo SERP API provides a variety of search data including organic search results, ads,
-                        featured snippets, related queries, images, and videos. The exact data available may depend on
-                        the query type (e.g., web, image, or news search).
+                        You can integrate the Bing SERP API by using an API key provided upon registration. Use HTTP
+                        requests to send queries to the API endpoint and receive results in JSON or XML format.
                     </div>
                 </div>
 
@@ -63,14 +62,13 @@
 
                         <h3 class="text-base transition-colors duration-300 text-[#494343]"
                             :class="activeFaq === 'faq3' ? 'text-violet-500' : 'text-[#494343]'">
-                            Does The Yahoo Serp Api Support Location-specific Search Results?
+                            What Kind Of Data Can I Retrieve With The Bing SERP API?
                         </h3>
                     </button>
 
                     <div v-show="activeFaq === 'faq3'" class="mt-4 text-gray-600 leading-relaxed">
-                        Yes, most Yahoo SERP API services allow users to specify location parameters to get
-                        region-specific search results, which can be valuable for businesses targeting specific
-                        geographic audiences.
+                        Yes, each plan comes with a defined request limit. The number of allowed API requests depends on
+                        your subscription tier, with higher tiers offering more requests per month.
                     </div>
                 </div>
 
@@ -84,14 +82,13 @@
 
                         <h3 class="text-base transition-colors duration-300"
                             :class="activeFaq === 'faq4' ? 'text-violet-500' : 'text-[#494343]'">
-                            How Frequently Can I Make Requests To The Yahoo Serp Api?
+                            Can I Filter Results By Language Or Region?
                         </h3>
                     </button>
 
                     <div v-show="activeFaq === 'faq4'" class="mt-4 text-gray-600 leading-relaxed">
-                        The request frequency depends on your subscription plan. Typically, Yahoo SERP APIs come with
-                        rate limits, such as a set number of requests per minute, hour, or day, which can be adjusted
-                        with higher-tier plans.
+                        Yes, the Bing SERP API allows you to filter results based on specific languages, countries, or
+                        regions to provide localized data.
                     </div>
                 </div>
 
@@ -105,36 +102,16 @@
 
                         <h3 class="text-base transition-colors duration-300"
                             :class="activeFaq === 'faq5' ? 'text-violet-500' : 'text-[#494343]'">
-                            How Do I Integrate The Yahoo Serp Api Into My Application?
+                            How Frequently Are The SERP Results Updated?
                         </h3>
                     </button>
 
                     <div v-show="activeFaq === 'faq5'" class="mt-4 text-gray-600 leading-relaxed">
-                        Integration is usually done through HTTP GET requests to the API endpoint with the necessary
-                        query parameters (like search term, location, and language). The API returns results in a
-                        structured format, such as JSON, which can be parsed and displayed within your application.
+                        Bing’s search results are updated in real-time. However, API request results may vary slightly
+                        depending on when the query is made, due to caching and regional differences.
                     </div>
                 </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <button class="w-full flex items-center justify-start text-left space-x-2.5 cursor-pointer"
-                        @click="toggleAccordion('faq6')">
-                        <span class="text-2xl transition-transform duration-300 text-[#494343]"
-                            :class="{ 'rotate-45 text-violet-500': activeFaq === 'faq6' }">
-                            +
-                        </span>
-
-                        <h3 class="text-base transition-colors duration-300"
-                            :class="activeFaq === 'faq6' ? 'text-violet-500' : 'text-[#494343]'">
-                            Can I Get Historical Search Data With The Yahoo Serp Api?
-                        </h3>
-                    </button>
-
-                    <div v-show="activeFaq === 'faq6'" class="mt-4 text-gray-600 leading-relaxed">
-                       Most Yahoo SERP APIs focus on real-time data; however, some third-party providers may offer historical data storage or allow access to past data through custom setups.
-                    </div>
-                </div>
-
+                
             </div>
 
         </div>

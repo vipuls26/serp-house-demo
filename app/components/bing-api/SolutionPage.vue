@@ -11,34 +11,33 @@ import BaseLink from '../ui/BaseLink.vue';
         <div class="flex flex-col md:flex-row items-center justify-between w-full px-4 gap-8 pb-12">
 
             <div class="md:w-1/2 space-y-6">
-                <h2 class="text-xl md:text-3xl lg:text-2xl text-blue-950 text-start">
-                    Your Complete Search Solution – Images, News, Shopping Made Simple
+                <h2 class="text-xl md:text-2xl lg:text-2xl text-blue-950 text-start">
+                    Find Everything You Need with Bing! - Images, News, and Shopping
                 </h2>
                 <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-start">
-                    Quickly find images, get the latest news, and shop—all in one search. Whether you need pictures,
-                    updates, or products, it's all here for you.
+                   Bing makes searching simple. Whether it's trending images, the latest headlines, or top shopping offers, everything you need is just one click away.
                 </p>
 
                 <div class="space-y-4 pt-2">
                     <div class="flex items-center gap-3">
                         <BaseCheck />
-                        <NuxtLink href="#" class="text-gray-800 text-sm">High-Quality Images</NuxtLink>
+                        <NuxtLink href="#" class="text-gray-800 text-sm">Find the Perfect Images</NuxtLink>
                     </div>
                     <div class="flex items-center gap-3">
                         <BaseCheck />
-                        <NuxtLink href="#" class="text-gray-800 text-sm">Latest News Updates</NuxtLink>
+                        <NuxtLink href="#" class="text-gray-800 text-sm">Stay Informed with Breaking News</NuxtLink>
                     </div>
 
                     <div class="flex items-center gap-3">
                         <BaseCheck />
-                        <NuxtLink href="#" class="text-gray-800 text-sm">Smart Shopping Choices</NuxtLink>
+                        <NuxtLink href="#" class="text-gray-800 text-sm">Shop Smarter, Save Time</NuxtLink>
                     </div>
 
                 </div>
             </div>
 
             <div class="md:w-1/2 flex justify-center">
-                <img src="/images/yahooSerpApi/yahoo-all-in-one-search-features.png" alt="Specific Devices"
+                <img src="/images/bingSerpApi/bing-all-in-one-search-features.png" alt="Specific Devices"
                     class="w-full max-w-xl object-contain drop-shadow-sm">
             </div>
         </div>
@@ -100,32 +99,36 @@ import BaseLink from '../ui/BaseLink.vue';
         <div class="flex flex-col md:flex-row items-center justify-between px-4 gap-8 py-12">
 
             <div class="w-full md:w-1/2 flex justify-center">
-                <img src="/images/yahooSerpApi/yahoo-search-results-data.png" alt="yahoo search"
+                <img src="/images/bingSerpApi/bing-search-results-data.png" alt="bing search"
                     class="w-full max-w-xl object-contain drop-shadow-sm">
             </div>
 
             <div class="w-full md:w-1/2 space-y-6">
-                <h2 class="text-xl md:text-3xl lg:text-2xl text-blue-950 text-start">
-                    Your Complete Search Solution – Images, News, Shopping Made Simple
+                <h2 class="text-xl md:text-2xl lg:text-2xl text-blue-950 text-start">
+                   Bing It Better: The Smarter Way to Search and Find
                 </h2>
                 <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-start">
-                    Quickly find images, get the latest news, and shop—all in one search. Whether you need pictures,
-                    updates, or products, it's all here for you.
+                    Bing offers fast, reliable, and organized search results, providing localized content, images, and translations for a seamless, productive search experience.
                 </p>
 
                 <div class="space-y-4 pt-2">
                     <div class="flex items-center gap-3">
                         <BaseCheck />
-                        <NuxtLink href="#" class="text-gray-800 text-sm">High-Quality Images</NuxtLink>
+                        <NuxtLink href="#" class="text-gray-800 text-sm">Accurate and Relevant Results</NuxtLink>
                     </div>
                     <div class="flex items-center gap-3">
                         <BaseCheck />
-                        <NuxtLink href="#" class="text-gray-800 text-sm">Latest News Updates</NuxtLink>
+                        <NuxtLink href="#" class="text-gray-800 text-sm">Multimedia Search for Images and Videos</NuxtLink>
                     </div>
 
                     <div class="flex items-center gap-3">
                         <BaseCheck />
-                        <NuxtLink href="#" class="text-gray-800 text-sm">Smart Shopping Choices</NuxtLink>
+                        <NuxtLink href="#" class="text-gray-800 text-sm">Personalized Search Suggestions</NuxtLink>
+                    </div>
+
+                       <div class="flex items-center gap-3">
+                        <BaseCheck />
+                        <NuxtLink href="#" class="text-gray-800 text-sm">Comprehensive Web Search</NuxtLink>
                     </div>
 
                 </div>
@@ -136,7 +139,7 @@ import BaseLink from '../ui/BaseLink.vue';
         <div class="flex flex-col md:flex-row items-center justify-between px-4 gap-8 pb-12">
 
             <div class="w-full md:w-1/2 space-y-6">
-                <h2 class="text-xl md:text-3xl lg:text-2xl text-blue-950 text-start">
+                <h2 class="text-xl md:text-2xl lg:text-2xl text-blue-950 text-start">
                     Get a maintenance-free scraping infrastructure
                 </h2>
                 <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-start">
@@ -166,7 +169,7 @@ import BaseLink from '../ui/BaseLink.vue';
             </div>
 
             <div class="w-full md:w-1/2 flex justify-center">
-                <img src="/images/yahooSerpApi/scraping-infrastructure.png" alt="scraping infrastructre"
+                <img src="/images/bingSerpApi/scraping-infrastructure.png" alt="scraping infrastructre"
                     class="w-full max-w-xl object-contain drop-shadow-sm">
             </div>
 

@@ -5,9 +5,9 @@
             <div class="flex items-center justify-between h-16 pt-2">
 
                 <div class="flex shrink-0 items-center">
-                    <a href="/" class="flex items-center justify-center font-bold">
+                    <NuxtLink to="/" class="flex items-center justify-center font-bold">
                         <BaseLogo />
-                    </a>
+                    </NuxtLink>
 
                 </div>
 
@@ -116,7 +116,7 @@ const productMenu = {
             label: "Google API",
             // image: "/images/navBar/google-api.png",
             children: [
-                { label: "Google SERP API", link: "/api/" },
+                { label: "Google SERP API", link: "/api/google/serp-api" },
                 { label: "Google News Api", link: "#" },
                 { label: "Google Job API", link: "#" },
                 { label: "Google Videos API", link: "#" },
@@ -130,11 +130,11 @@ const productMenu = {
         },
         {
             label: "Bing Api",
-            image: "/images/navBar/bing-api.png",
+            // image: "/images/navBar/bing-api.png",
             children: [
-                { label: "Bing SERP API", link: "#" },
-                { label: "Bing News API", link: "#" },
-                { label: "Bing Images API", link: "#" }
+                { label: "Bing SERP API", link: "/api/bing/serp-api" },
+                { label: "Bing News API", link: "/api/bing/news-api" },
+                { label: "Bing Images API", link: "/api/bing/image-api" }
             ]
         },
         {

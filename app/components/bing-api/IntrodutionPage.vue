@@ -38,14 +38,14 @@ import BaseLink from '../ui/BaseLink.vue';
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-4 md:justify-start">
 
                     <h1 class="text-center text-4xl leading-none md:text-left">
-                        <span class="text-blue-950">Yahoo</span> <span class="text-violet-500">SERP API</span>
+                        <span class="text-blue-950">Bing</span> <span class="text-violet-500">SERP API</span>
                     </h1>
 
 
                 </div>
 
                 <h2 class="mt-4 text-center text-lg text-slate-700 md:text-left">
-                    Enhance Searches With Real-Time Insights Using Yahoo SERP API
+                    Harness Bing SERP Data Seamlessly with our Bing Web SERP API
                 </h2>
 
                 <div class="mt-6 space-y-4">
@@ -53,21 +53,21 @@ import BaseLink from '../ui/BaseLink.vue';
                     <div class="flex items-start gap-3">
                         <BaseDescription />
                         <p class="text-sm text-slate-700 leading-relaxed">
-                            Ideal for SEO, market research, and competitive analysis applications.
+                           Access SERP data globally for localized insights.
                         </p>
                     </div>
 
                     <div class="flex items-start gap-3">
                         <BaseDescription />
                         <p class="text-sm text-slate-700 leading-relaxed">
-                            Provides 100 SERP results for a specified search term.
+                           Web, Image, News results available across all search engines.
                         </p>
                     </div>
 
                     <div class="flex items-start gap-3">
                         <BaseDescription />
                         <p class="text-sm text-slate-700 leading-relaxed">
-                            Offers scalability to handle a large number of requests.
+                            Analyze SERP data across devices for comprehensive insights.
                         </p>
                     </div>
 
@@ -77,21 +77,21 @@ import BaseLink from '../ui/BaseLink.vue';
 
                     <div class="flex items-center gap-2">
                         <i class="pi pi-check text-violet-500"></i>
-                        <span class="font-semibold text-slate-700">
+                        <span class="font-medium text-slate-700">
                             No Captcha, no blocks
                         </span>
                     </div>
 
                     <div class="flex items-center gap-2">
                         <i class="pi pi-check text-violet-500"></i>
-                        <span class="font-semibold text-slate-700">
+                        <span class="font-medium text-slate-700">
                             Enterprise Scaling
                         </span>
                     </div>
 
                     <div class="flex items-center gap-2">
                         <i class="pi pi-check text-violet-500"></i>
-                        <span class="font-semibold text-slate-700">
+                        <span class="font-medium text-slate-700">
                             24/7 Support
                         </span>
                     </div>
@@ -115,7 +115,7 @@ import BaseLink from '../ui/BaseLink.vue';
             </div>
 
             <div class="flex justify-center">
-                <img src="/images/yahooSerpApi/yahoo-serp-api.png" alt="SERP API"
+                <img src="/images/bingSerpApi/bing-serp-api.png" alt="SERP API"
                     class="w-full max-w-sm md:max-w-xs lg:max-w-md" />
             </div>
 

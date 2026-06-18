@@ -1,8 +1,19 @@
+<script setup>
+import ContactPage from '~/components/yahoo-api/ContactPage.vue';
+import ReviewPage from '~/components/yahoo-api/ReviewPage.vue';
+import YahooNewsIntroduction from '~/components/yahoo-api/YahooNewsIntroduction.vue';
+
+</script>
+
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6">
-        <h1>
-            yahoo new api
-        </h1>
-    </div>
+    <!-- introduction -->
+    <YahooNewsIntroduction />
+
+    <!-- review page -->
+    <ReviewPage />
+
+    <!-- contact page -->
+    <ContactPage />
+    
 </template>
