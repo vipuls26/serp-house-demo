@@ -88,7 +88,6 @@
                 </p>
             </div>
 
-
             <div
                 class="p-6 rounded-2xl border-b-2 border-transparent hover:border-violet-500 hover:shadow-sm transition-all duration-300">
                 <img src="/images/googleSerpApi/instant-updates.png" alt="customer-support" class="h-8 mb-4">

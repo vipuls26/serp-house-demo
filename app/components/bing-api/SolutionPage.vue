@@ -15,7 +15,8 @@ import BaseLink from '../ui/BaseLink.vue';
                     Find Everything You Need with Bing! - Images, News, and Shopping
                 </h2>
                 <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-start">
-                   Bing makes searching simple. Whether it's trending images, the latest headlines, or top shopping offers, everything you need is just one click away.
+                    Bing makes searching simple. Whether it's trending images, the latest headlines, or top shopping
+                    offers, everything you need is just one click away.
                 </p>
 
                 <div class="space-y-4 pt-2">
@@ -45,7 +46,7 @@ import BaseLink from '../ui/BaseLink.vue';
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-            <div class="space-y-4">
+            <div class="space-y-4 border-r-0 sm:border-r-2 sm:border-violet-500">
                 <h2 class="text-lg text-center md:text-start font-semibold text-blue-950">
                     Enterprise Scaling
                 </h2>
@@ -61,7 +62,7 @@ import BaseLink from '../ui/BaseLink.vue';
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       
+
                 <div class="flex items-center gap-3">
                     <BaseCheck />
                     <p>Account manager</p>
@@ -105,10 +106,11 @@ import BaseLink from '../ui/BaseLink.vue';
 
             <div class="w-full md:w-1/2 space-y-6">
                 <h2 class="text-xl md:text-2xl lg:text-2xl text-blue-950 text-start">
-                   Bing It Better: The Smarter Way to Search and Find
+                    Bing It Better: The Smarter Way to Search and Find
                 </h2>
                 <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-start">
-                    Bing offers fast, reliable, and organized search results, providing localized content, images, and translations for a seamless, productive search experience.
+                    Bing offers fast, reliable, and organized search results, providing localized content, images, and
+                    translations for a seamless, productive search experience.
                 </p>
 
                 <div class="space-y-4 pt-2">
@@ -118,7 +120,8 @@ import BaseLink from '../ui/BaseLink.vue';
                     </div>
                     <div class="flex items-center gap-3">
                         <BaseCheck />
-                        <NuxtLink href="#" class="text-gray-800 text-sm">Multimedia Search for Images and Videos</NuxtLink>
+                        <NuxtLink href="#" class="text-gray-800 text-sm">Multimedia Search for Images and Videos
+                        </NuxtLink>
                     </div>
 
                     <div class="flex items-center gap-3">
@@ -126,7 +129,7 @@ import BaseLink from '../ui/BaseLink.vue';
                         <NuxtLink href="#" class="text-gray-800 text-sm">Personalized Search Suggestions</NuxtLink>
                     </div>
 
-                       <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-3">
                         <BaseCheck />
                         <NuxtLink href="#" class="text-gray-800 text-sm">Comprehensive Web Search</NuxtLink>
                     </div>

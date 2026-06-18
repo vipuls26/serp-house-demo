@@ -46,7 +46,8 @@ import BaseLink from '../ui/BaseLink.vue';
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-            <div class="space-y-4">
+
+            <div class="space-y-4 border-r-0 sm:border-r-2 sm:border-violet-500">
                 <h2 class="text-lg text-center md:text-start font-semibold text-blue-950">
                     Enterprise Scaling
                 </h2>
@@ -62,7 +63,7 @@ import BaseLink from '../ui/BaseLink.vue';
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       
+
                 <div class="flex items-center gap-3">
                     <BaseCheck />
                     <p>Account manager</p>

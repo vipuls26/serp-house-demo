@@ -4,75 +4,113 @@ import BaseLink from '../ui/BaseLink.vue';
 </script>
 
 <template>
+
     <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-8 space-y-12 py-12">
 
         <h1 class="text-center text-blue-950 text-xl md:text-2xl">
-            Use Cases For Our SERP API</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="flex flex-col gap-3 p-3 rounded-lg
-                        ring-1 ring-gray-300
-                        border-b-4 border-transparent
-                        hover:border-violet-500
-                        transition-all duration-300">
+            Use Cases of Google News API</h1>
 
-                <div class="flex justify-center">
-                    <img src="/images/homePage/seo-use-cases.png" alt="seo use case" class="h-12">
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                <p class="text-base text-blue-950 text-center">Page Index Checker</p>
-
-                <p class="text-sm text-slate-600 px-8 text-center">Quickly verify which of your web pages are indexed by
-                    search engines to improve visibility.</p>
-
-            </div>
-
-            <div class="flex flex-col gap-3 p-3 rounded-lg
-                        ring-1 ring-gray-300
-                        border-b-4 border-transparent
-                        hover:border-violet-500
-                        transition-all duration-300">
-                <div class="flex justify-center">
-                    <img src="/images/homePage/lead-generation.png" alt="lead generation" class="h-12">
-                </div>
-
-                <p class="text-base text-blue-950 text-center">Keyword Rank Tracker</p>
-
-                <p class="text-sm text-slate-600 px-8 text-center">Monitor your keyword rankings in real time to
-                    optimize your SEO strategy
+            <div class="group flex flex-col gap-3 p-8 rounded-2xl border border-transparent
+                            transition-all duration-300 ease-in-out
+                            hover:border-violet-200 hover:shadow-lg
+                            hover:-translate-y-2
+                        ">
+                <p class="text-lg text-blue-950 transition-colors duration-300 group-hover:text-violet-500">
+                    Brand & Reputation Monitoring
                 </p>
 
-            </div>
-
-            <div class="flex flex-col gap-3 p-3 rounded-lg
-                        ring-1 ring-gray-300
-                        border-b-4 border-transparent
-                        hover:border-violet-500
-                        transition-all duration-300">
-                <div class="flex justify-center">
-                    <img src="/images/homePage/e-commerce-use-cases.png" alt="e-commerce use case" class="h-12">
-                </div>
-
-                <p class="text-base text-blue-950 text-center">Ad Tracker</p>
-
-                <p class="text-sm text-slate-600 px-8 text-center">Track your ad performance across platforms and
-                    enhance campaign effectiveness.
+                <p class="text-base text-slate-600 transition-colors duration-300 group-hover:text-slate-700">
+                    Track how companies, products, or individuals appear
+                    across Google News results. Monitor media coverage,
+                    emerging narratives, and publisher activity.
                 </p>
 
+                <span class="h-0.5 w-15 bg-violet-500 transition-all duration-300 group-hover:w-20"></span>
             </div>
 
-            <div class="flex flex-col gap-3 p-3 rounded-lg
-                        ring-1 ring-gray-300
-                        border-b-4 border-transparent
-                        hover:border-violet-500
-                        transition-all duration-300">
-                <div class="flex justify-center">
-                    <img src="/images/homePage/digital-marketing-use-cases.png" alt="Local SEO" class="h-12">
-                </div>
+            <div class="group flex flex-col gap-3 p-8 rounded-2xl border border-transparent
+                            transition-all duration-300 ease-in-out
+                            hover:border-violet-200 hover:shadow-lg
+                            hover:-translate-y-2
+                        ">
+                <p class="text-lg text-blue-950 transition-colors duration-300 group-hover:text-violet-500">
+                    SEO & News Visibility Analysis
+                </p>
 
-                <p class="text-base text-blue-950 text-center">Local SEO </p>
+                <p class="text-base text-slate-600 transition-colors duration-300 group-hover:text-slate-700">
+                    Understand which stories surface for target keywords. Analyze news ranking behavior, placement
+                    shifts, and publisher presence within Google News.
+                </p>
 
-                <p class="text-sm text-slate-600 px-8 text-center">Optimize your online presence for local searches to
-                    attract nearby customers.</p>
+                <span class="h-0.5 w-15 bg-violet-500 transition-all duration-300 group-hover:w-20"></span>
+            </div>
+
+            <div class="group flex flex-col gap-3 p-8 rounded-2xl border border-transparent
+                            transition-all duration-300 ease-in-out
+                            hover:border-violet-200 hover:shadow-lg
+                            hover:-translate-y-2
+                        ">
+                <p class="text-lg text-blue-950 transition-colors duration-300 group-hover:text-violet-500">
+                    Market & Trend Research
+                </p>
+
+                <p class="text-base text-slate-600 transition-colors duration-300 group-hover:text-slate-700">
+                    Identify breaking stories, rising topics, and regional developments using real-time news search
+                    data.
+                </p>
+
+                <span class="h-0.5 w-15 bg-violet-500 transition-all duration-300 group-hover:w-20"></span>
+            </div>
+
+            <div class="group flex flex-col gap-3 p-8 rounded-2xl border border-transparent
+                            transition-all duration-300 ease-in-out
+                            hover:border-violet-200 hover:shadow-lg
+                            hover:-translate-y-2
+                        ">
+                <p class="text-lg text-blue-950 transition-colors duration-300 group-hover:text-violet-500">
+                    Competitive Intelligence
+                </p>
+
+                <p class="text-base text-slate-600 transition-colors duration-300 group-hover:text-slate-700">
+                    Observe competitor mentions, media exposure, and news coverage patterns across industries and
+                    locations.
+                </p>
+
+                <span class="h-0.5 w-15 bg-violet-500 transition-all duration-300 group-hover:w-20"></span>
+            </div>
+
+            <div class="group flex flex-col gap-3 p-8 rounded-2xl border border-transparent
+                            transition-all duration-300 ease-in-out
+                            hover:border-violet-200 hover:shadow-lg
+                            hover:-translate-y-2
+                        ">
+                <p class="text-lg text-blue-950 transition-colors duration-300 group-hover:text-violet-500">
+                    Content Aggregation & News Platforms
+                </p>
+
+                <p class="text-base text-slate-600 transition-colors duration-300 group-hover:text-slate-700">
+                    Power news feeds, alerts, and research tools with structured Google News API data.
+                </p>
+
+                <span class="h-0.5 w-15 bg-violet-500 transition-all duration-300 group-hover:w-20"></span>
+            </div>
+
+            <div class="group flex flex-col gap-3 p-8 rounded-2xl border border-transparent
+                            transition-all duration-300 ease-in-out
+                            hover:border-violet-200 hover:shadow-lg
+                            hover:-translate-y-2
+                        ">
+                <p class="text-lg text-blue-950 transition-colors duration-300 group-hover:text-violet-500">
+                    Financial & Industry Monitoring
+                </p>
+
+                <p class="text-base text-slate-600 transition-colors duration-300 group-hover:text-slate-700">
+                    Track company announcements, sector updates, and economic events appearing in Google News.
+                </p>
+
+                <span class="h-0.5 w-15 bg-violet-500 transition-all duration-300 group-hover:w-20"></span>
             </div>
 
         </div>
@@ -84,18 +122,17 @@ import BaseLink from '../ui/BaseLink.vue';
         <div>
             <h2
                 class="text-center text-xl xl:text-4xl leading-tight text-blue-950 md:text-left md:text-2xl lg:text-3xl">
-                Experience The SERP API For Yourself.
+                Test the API with Free Credits
             </h2>
 
             <p class="text-center text-sm text-gray-500 mt-3 md:text-left xl:text-lg">
-                Explore the Scraper APIs Playground on the Oxylabs dashboard for hands-on interaction with our
-                APIs, and access detailed technical documentation for all the essential information.
+               Use free credits to test requests, responses, and integrations.
             </p>
         </div>
 
         <div class="flex flex-col items-center gap-5 md:items-end md:justify-self-end">
             <div class="flex justify-center md:justify-end">
-                <BaseLink name="Signup now" />
+                <BaseLink name="Get Free Credits" />
             </div>
 
             <div class="flex flex-wrap items-center justify-center gap-3 text-center md:justify-end md:text-right">

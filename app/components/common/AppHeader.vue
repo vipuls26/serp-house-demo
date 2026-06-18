@@ -117,9 +117,9 @@ const productMenu = {
             // image: "/images/navBar/google-api.png",
             children: [
                 { label: "Google SERP API", link: "/api/google/serp-api" },
-                { label: "Google News Api", link: "#" },
-                { label: "Google Job API", link: "#" },
-                { label: "Google Videos API", link: "#" },
+                { label: "Google News Api", link: "/api/google/news-api" },
+                { label: "Google Job API", link: "/api/google/jobs-api" },
+                { label: "Google Videos API", link: "/api/google/videos-api" },
                 { label: "Google Images API", link: "#" },
                 { label: "Google Shopping API", link: "#" },
                 { label: "Google Short Video API", link: "#" },

@@ -1,11 +1,11 @@
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6 py-12">
+    <div class="mx-auto max-w-360 px-4  lg:px-3 xl:px-12 pb-4 space-y-6 py-12">
         <h2 class="text-blue-950 text-center text-2xl font-medium">
             Scale Up Your Business with SERPHouse
         </h2>
 
-        <div class="flex flex-col md:flex-row justify-center items-center mx-auto gap-5">
+        <div class="flex flex-col md:flex-row justify-center items-center  gap-5">
 
             <div>
                 <p class="flex items-center text-blue-950">
