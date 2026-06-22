@@ -10,11 +10,11 @@ import BaseLink from '../ui/BaseLink.vue';
             class="mx-auto grid gap-8 rounded-3xl bg-white px-6 py-10 shadow-sm md:grid-cols-2 md:items-center md:px-10">
 
             <div>
-                <h2 class="text-center text-xl xl:text-4xl leading-tight text-blue-950 md:text-left md:text-2xl lg:text-3xl">
+                <h2 class="text-center text-xl xl:text-2xl leading-tight text-blue-950 md:text-left md:text-2xl lg:text-3xl">
                     Experience The SERP API For Yourself.
                 </h2>
 
-                <p class="text-center text-sm text-gray-500 mt-3 md:text-left xl:text-lg">
+                <p class="text-center text-sm text-slate-600 mt-3 md:text-left xl:text-base">
                     Explore the Scraper APIs Playground on the Oxylabs dashboard for hands-on interaction with our
                     APIs, and access detailed technical documentation for all the essential information.
                 </p>
@@ -36,7 +36,7 @@ import BaseLink from '../ui/BaseLink.vue';
         </div>
 
         <div class="mx-auto max-w-3xl space-y-4">
-            <h2 class="text-center md:text-xl lg:text-2xl xl:text-4xl text-blue-950">
+            <h2 class="text-center md:text-xl lg:text-2xl text-blue-950">
                 API Playground
             </h2>
 

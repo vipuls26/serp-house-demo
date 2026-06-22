@@ -11,12 +11,12 @@
                         class="w-full max-w-xl object-contain drop-shadow-sm">
                 </div>
 
-                <div class="w-full md:w-1/2 space-y-6">
-                    <h2 class="text-xl md:text-3xl lg:text-5xl text-blue-950 text-center">
+                <div class="w-full md:w-1/2 space-y-4">
+                    <h2 class="text-xl md:text-2xl text-blue-950">
                         Real-Time SERP Data From All Major search Engines
                     </h2>
 
-                    <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-center">
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-lg">
                         Obtain real-time SERP data from all major search APIs, ensuring up-to-date insights for
                         accurate
                         performance tracking.
@@ -25,15 +25,15 @@
                     <div class="space-y-4 pt-2">
                         <div class="flex items-center gap-3">
                             <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
-                            <a href="#" class="text-gray-800 text-sm">Google Search API</a>
+                            <a href="#" class="text-slate-700 text-sm">Google Search API</a>
                         </div>
                         <div class="flex items-center gap-3">
                             <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
-                            <a href="#" class="text-gray-800 text-sm">Bing Search API</a>
+                            <a href="#" class="text-slate-700 text-sm">Bing Search API</a>
                         </div>
                         <div class="flex items-center gap-3">
                             <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
-                            <a href="#" class="text-gray-800 text-sm">Yahoo Search API</a>
+                            <a href="#" class="text-slate-700 text-sm">Yahoo Search API</a>
                         </div>
                     </div>
                 </div>
@@ -41,11 +41,11 @@
 
             <div class="flex flex-col md:flex-row items-center justify-between gap-12">
 
-                <div class="w-full md:w-1/2 space-y-6">
-                    <h2 class="text-xl md:text-3xl lg:text-5xl text-blue-950 text-center">
+                <div class="w-full md:w-1/2 space-y-4">
+                    <h2 class="text-xl md:text-2xl text-blue-950">
                         Access search results tailored to specific devices
                     </h2>
-                    <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-center">
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-lg">
                         Use device-specific data to refine your SEO strategies and optimize performance across
                         platforms.
                     </p>
@@ -53,11 +53,11 @@
                     <div class="space-y-4 pt-2">
                         <div class="flex items-center gap-3">
                             <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
-                            <a href="#" class="text-gray-800 text-sm">Desktop And Mobile Devices Targeting.</a>
+                            <a href="#" class="text-slate-700 text-sm">Desktop And Mobile Devices Targeting.</a>
                         </div>
                         <div class="flex items-center gap-3">
                             <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
-                            <a href="#" class="text-gray-800 text-sm">Gain Insights Into Your Content’s Rankings
+                            <a href="#" class="text-slate-700 text-sm">Gain Insights Into Your Content’s Rankings
                                 Across Various Devices.</a>
                         </div>
 
@@ -78,11 +78,11 @@
                 </div>
 
                 <div class="w-full md:w-1/2 space-y-6">
-                    <h2 class="text-xl md:text-3xl lg:text-5xl text-blue-950 text-center">
+                  <h2 class="text-xl md:text-2xl text-blue-950">
                         Access search results from any geographic location
 
                     </h2>
-                    <p class="text-gray-600 text-sm leading-relaxed max-w-lg text-center">
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-lg">
                         We use Google Geographical Targeting so that you can use it as a data source and Boost local
                         SEO efforts.
                     </p>
@@ -90,17 +90,17 @@
                     <div class="space-y-4 pt-2">
                         <div class="flex items-center gap-3">
                             <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
-                            <a href="#" class="text-gray-800 text-sm">Get Localised Results From 245 Countries.</a>
+                            <a href="#" class="text-slate-700 text-sm">Get Localised Results From 245 Countries.</a>
                         </div>
                         <div class="flex items-center gap-3">
                             <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
-                            <a href="#" class="text-gray-800 text-sm">Target Country, State, City, Municipality And
+                            <a href="#" class="text-slate-700 text-sm">Target Country, State, City, Municipality And
                                 More.</a>
                         </div>
 
                         <div class="flex items-center gap-3">
                             <img src="/images/homePage/check-circle.png" alt="check" class="h-4 w-4 md:w-6 md:h-6">
-                            <a href="#" class="text-gray-800 text-sm">Location-Specific Insights For Optimal
+                            <a href="#" class="text-slate-700 text-sm">Location-Specific Insights For Optimal
                                 Decision-Making.</a>
                         </div>
 
@@ -111,10 +111,10 @@
 
         <div class="flex flex-col items-center justify-center text-center p-6 max-w-2xl mx-auto gap-2">
             <div>
-                <h2 class="text-2xl text-gray-900">Industries that Can Benefits from SERPHouse</h2>
+                <h2 class="text-2xl text-blue-950">Industries that Can Benefits from SERPHouse</h2>
             </div>
             <div>
-                <p class="text-lg text-gray-600">SERPHouse includes digital marketing, e-commerce, finance, and tech
+                <p class="text-lg text-slate-600">SERPHouse includes digital marketing, e-commerce, finance, and tech
                     startups, all leveraging advanced SERP analysis for competitive insights and growth.</p>
             </div>
         </div>
@@ -125,14 +125,14 @@
                 class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 transition-colors duration-200">
                 <img src="/images/homePage/seo-professional.png" alt="SEO Professional"
                     class="w-16 h-16 mb-4 object-contain">
-                <h3 class="text-xl mb-2 text-gray-800">SEO Professional</h3>
+                <h3 class="text-xl mb-2 text-blue-950">SEO Professional</h3>
             </div>
 
             <div
                 class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 transition-colors duration-200">
                 <img src="/images/homePage/digital-marketers.png" alt="Digital Marketers"
                     class="w-16 h-16 mb-4 object-contain">
-                <h3 class="text-xl mb-2 text-gray-800">Digital Marketers</h3>
+                <h3 class="text-xl mb-2 text-blue-950">Digital Marketers</h3>
 
             </div>
 
@@ -141,14 +141,14 @@
             <div
                 class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 transition-colors duration-200">
                 <img src="/images/homePage/developers.png" alt="Train AI Models" class="w-16 h-16 mb-4 object-contain">
-                <h3 class="text-xl mb-2 text-gray-800">Train AI Models</h3>
+                <h3 class="text-xl mb-2 text-blue-950">Train AI Models</h3>
 
             </div>
 
             <div
                 class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center h-full border-b-4 border-b-transparent hover:border-b-violet-500 transition-colors duration-200">
                 <img src="/images/homePage/data-science.png" alt="Data Science" class="w-16 h-16 mb-4 object-contain">
-                <h3 class="text-xl mb-2 text-gray-800">Data Science</h3>
+                <h3 class="text-xl mb-2 text-blue-950">Data Science</h3>
 
             </div>
         </div>

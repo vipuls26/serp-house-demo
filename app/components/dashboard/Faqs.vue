@@ -23,7 +23,7 @@
                         </h3>
                     </button>
 
-                    <div v-show="activeFaq === 'faq1'" class="mt-4 text-gray-600 leading-relaxed">
+                    <div v-show="activeFaq === 'faq1'" class="mt-4 text-slate-600 leading-relaxed">
                         We only count successful requests. Failed requests need to be retried.
                     </div>
                     
@@ -44,7 +44,7 @@
                         </h3>
                     </button>
 
-                    <div v-show="activeFaq === 'faq2'" class="mt-4 text-gray-600 leading-relaxed">
+                    <div v-show="activeFaq === 'faq2'" class="mt-4 text-slate-600 leading-relaxed">
                         We offer a full refund unless you have not used 25% of your searches within 10 days.
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                         </h3>
                     </button>
 
-                    <div v-show="activeFaq === 'faq3'" class="mt-4 text-gray-600 leading-relaxed">
+                    <div v-show="activeFaq === 'faq3'" class="mt-4 text-slate-600 leading-relaxed">
                         We offer a custom plan based on your requirements. You have to write us at
                         getsupport@serphouse.com with your Monthly/Yearly requirement.
                     </div>
@@ -83,7 +83,7 @@
                         </h3>
                     </button>
 
-                    <div v-show="activeFaq === 'faq4'" class="mt-4 text-gray-600 leading-relaxed">
+                    <div v-show="activeFaq === 'faq4'" class="mt-4 text-slate-600 leading-relaxed">
                         Scraping public data is legal unless your usage is otherwise illegal. Illegal activities include
                         but are not limited to cyber criminality, terrorism, pornography, denial of service attacks, and
                         war crimes.
@@ -105,7 +105,7 @@
                         </h3>
                     </button>
 
-                    <div v-show="activeFaq === 'faq5'" class="mt-4 text-gray-600 leading-relaxed">
+                    <div v-show="activeFaq === 'faq5'" class="mt-4 text-slate-600 leading-relaxed">
                         Yes, you can use the SERP API for commercial and business purposes. SERPHouse offers plans
                         suitable for both individual and enterprise use.
                     </div>
@@ -126,7 +126,7 @@
                         </h3>
                     </button>
 
-                    <div v-show="activeFaq === 'faq6'" class="mt-4 text-gray-600 leading-relaxed">
+                    <div v-show="activeFaq === 'faq6'" class="mt-4 text-slate-600 leading-relaxed">
                         For any specific inquiries or further assistance, don't hesitate to contact SERPHouse support,
                         consult their documentation, or refer to their official website for the most up-to-date
                         information about the SERP API..

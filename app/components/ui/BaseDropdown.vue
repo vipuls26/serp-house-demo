@@ -1,31 +1,45 @@
 <template>
-    <div class="relative group" @mouseenter="open = true" @mouseleave="open = false">
+    <div class="relative">
 
-        <button v-if="item.children" :class="[
-            'flex items-center w-full px-4 py-2 hover:bg-gray-100 ',
+        <button v-if="item.children" @click.stop="toggleDropdown" :class="[
+            'flex items-center w-full px-5 py-3 text-[15px] font-medium text-slate-600 hover:text-violet-600 transition-colors duration-200',
             depth === 0 ? 'space-x-1' : 'justify-between'
         ]" type="button">
-            <!-- <img :src=item.image class="w-6 h-6 border-0"/> -->
             <span>{{ item.label }}</span>
-            <i :class="['pi', depth === 0 ? 'pi-angle-down text-xs ml-1' : 'pi-angle-right text-xs']"></i>
+
+            <i :class="[
+                'pi transition-transform duration-200',
+                isOpen && depth === 0 ? 'rotate-180' : '',
+                depth === 0 ? 'pi-angle-down text-xs ml-1' : 'pi-angle-right text-xs'
+            ]" />
         </button>
 
-        <NuxtLink v-else :to="item.link" class="block px-4 py-2 hover:bg-gray-100 whitespace-nowrap">
-            <!-- <img :src=item.image class="w-6 h-6"/> -->
+        <NuxtLink v-else :to="item.link" @click="closeDropdown"
+            class="block px-5 py-3 text-[15px] font-medium text-slate-600 hover:text-violet-600 hover:bg-slate-50 transition-colors duration-200 whitespace-nowrap overflow-y-auto"
+            active-class="text-violet-600 bg-violet-50 font-semibold">
             <span>{{ item.label }}</span>
         </NuxtLink>
 
-        <div v-if="item.children && open" :class="[
-            'absolute min-w-56 bg-white shadow-lg rounded-md z-50 py-1',
-            depth === 0 ? 'left-0 top-full mt-1' : 'left-full top-0 ml-1'
-        ]">
-            <BaseDropdown v-for="(child, i) in item.children" :key="i" :item="child" :depth="depth + 1" />
-        </div>
+        <Transition enter-active-class="transition-all duration-200 ease-out"
+            enter-from-class="opacity-0 -translate-y-2 scale-95" enter-to-class="opacity-100 translate-y-0 scale-100"
+            leave-active-class="transition-all duration-150 ease-in"
+            leave-from-class="opacity-100 translate-y-0 scale-100" leave-to-class="opacity-0 -translate-y-2 scale-95">
+            <div v-show="item.children && isOpen" :class="[
+                'bg-white py-2',
+                depth === 0
+                    ? 'absolute left-0 top-full min-w-48 border border-slate-200 rounded-2xl shadow-2xl'
+                    : 'mt-2 ml-4 border-l-2 border-slate-100 pl-3'
+            ]">
+                <BaseDropdown v-for="(child, i) in item.children" :key="i" :item="child" :depth="depth + 1"
+                    @close="closeDropdown" />
+            </div>
+        </Transition>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+
+import { computed } from 'vue'
 
 const props = defineProps({
     item: {
@@ -38,7 +52,26 @@ const props = defineProps({
     }
 })
 
-const open = ref(false)
+const activeChain = useState('active-dropdown-chain', () => [])
+
+const isOpen = computed(() => activeChain.value[props.depth] === props.item.label)
+
+const emit = defineEmits(['close'])
+
+const closeDropdown = () => {
+    activeChain.value = []
+    emit('close')
+}
+
+const toggleDropdown = () => {
+    if (isOpen.value) {
+        activeChain.value = activeChain.value.slice(0, props.depth)
+    } else {
+        const newChain = activeChain.value.slice(0, props.depth)
+        newChain[props.depth] = props.item.label
+        activeChain.value = newChain
+    }
+}
 
 defineOptions({
     name: 'BaseDropdown'

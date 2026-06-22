@@ -1,48 +1,74 @@
 <template>
-    <nav class="relative bg-white border-b border-gray-100 shadow-sm p-2">
-        <div class="mx-auto max-w-360 px-4 sm:px-6  xl:px-12">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
+        <div class="mx-auto px-4 max-w-360 md:px-8 lg:px-8">
 
-            <div class="flex items-center justify-between h-16 pt-2">
+            <div class="flex items-center justify-between h-20">
 
-                <div class="flex shrink-0 items-center">
+                <div class="shrink-0 items-center">
                     <NuxtLink to="/" class="flex items-center justify-center font-bold">
                         <BaseLogo />
                     </NuxtLink>
 
                 </div>
 
-                <div class="hidden lg:flex items-center lg:gap-2 xl:gap-4 text-gray-600">
+                <div class="hidden lg:flex items-center justify-between flex-1 ml-8">
 
-                    <BaseDropdown :item="productMenu" />
+                    <div class="flex items-center lg:gap-2 xl:gap-8 text-slate-600">
 
+                        <BaseDropdown :item="productMenu" />
 
-                    <button class="flex items-center space-x-1">
-                        <span>Features</span>
-                        <i class="pi pi-angle-down text-xs ml-1"></i>
-                    </button>
+                        <button class="flex items-center space-x-1">
+                            <span
+                                class="text-[15px] font-medium text-slate-600 hover:text-violet-600 transition-colors duration-200">
+                                Features
+                            </span>
+                            <i class="pi pi-angle-down text-xs ml-1"></i>
+                        </button>
 
-                    <a href="#" class="hover:text-violet-500 transition">Try Demo</a>
-                    <a href="#" class="hover:text-violet-500 transition">Pricing</a>
+                        <NuxtLink to="#"
+                            class="text-[15px] font-medium text-slate-600 hover:text-violet-600 transition-colors duration-200">
+                            Try Demo
+                        </NuxtLink>
 
-                    <button class="flex items-center space-x-1 hover:text-violet-500 transition">
-                        <span>Use Cases</span>
-                        <i class="pi pi-angle-down text-xs ml-1"></i>
-                    </button>
+                        <NuxtLink to="/pricing"
+                            class="text-[15px] font-medium text-slate-600 hover:text-violet-600 transition-colors duration-200">
+                            Pricing
+                        </NuxtLink>
 
-                    <a href="#" class="hover:text-violet-500">Documentation</a>
-                    <div class="hidden xl:block w-0.5 bg-slate-300 h-8"></div>
+                        <button
+                            class="flex items-center space-x-1 text-[15px] font-medium text-slate-600 hover:text-violet-600 transition-colors duration-200">
+                            <span>Use Cases</span>
+                            <i class="pi pi-angle-down text-xs ml-1"></i>
+                        </button>
 
-                    <a href="#" class="hover:text-violet-500">Contact Sales</a>
+                        <NuxtLink to="#"
+                            class="text-[15px] font-medium text-slate-600 hover:text-violet-600 transition-colors duration-200">
+                            Documentation
+                        </NuxtLink>
 
-                    <NuxtLink to="/auth/login" class="flex items-center space-x-1 text-violet-500">
-                        <span>Login</span>
-                        <i class="pi pi-angle-right text-lg"></i>
-                    </NuxtLink>
+                        <div class="h-6 w-px bg-slate-200"></div>
 
-                    <NuxtLink to="/auth/register"
-                        class="inline-flex items-center justify-center bg-violet-500 text-white font-medium rounded-full px-6 py-3 lg:px-7 lg:py-3 xl:px-8 shadow-sm">
-                        Free Sign Up
-                    </NuxtLink>
+                        <NuxtLink to="/enterprise-custom-plan-offering"
+                            class="text-[15px] font-medium text-slate-600 hover:text-violet-600 transition-colors duration-200">
+                            Contact Sales
+                        </NuxtLink>
+
+                    </div>
+
+                    <div class="flex items-center gap-4 shrink-0 ml-6">
+
+                        <NuxtLink to="/auth/login" class="flex items-center space-x-1 text-violet-500">
+                            <span>Login</span>
+                            <i class="pi pi-angle-right text-lg"></i>
+                        </NuxtLink>
+
+                        <NuxtLink to="/auth/register"
+                            class="inline-flex items-center justify-center bg-violet-500 text-white font-medium rounded-full px-5 py-2.5 shadow-sm hover:bg-violet-600 transition-colors">
+                            Free Sign Up
+                        </NuxtLink>
+
+                    </div>
+
                 </div>
 
                 <div class="lg:hidden flex items-center space-x-4">
@@ -61,9 +87,8 @@
         </div>
 
         <div v-show="isOpen"
-            class="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg mx-auto pl-3">
-
-            <BaseDropdown :item="productMenu" />
+            class="lg:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl px-6 py-5 space-y-4">
+            <BaseDropdown :item="productMenu" @close="isOpen = false" />
 
             <button class="w-full text-left py-2 hover:text-violet-500">
                 <span>Features</span>
@@ -89,7 +114,6 @@
         </div>
     </nav>
 
-
 </template>
 
 <script setup>
@@ -110,27 +134,18 @@ const productMenu = {
         {
             label: "SERP API",
             link: "/api/serp/serp-api",
-            // image: "/images/navBar/serp-api-logo.png"
         },
         {
             label: "Google API",
-            // image: "/images/navBar/google-api.png",
             children: [
                 { label: "Google SERP API", link: "/api/google/serp-api" },
                 { label: "Google News Api", link: "/api/google/news-api" },
                 { label: "Google Job API", link: "/api/google/jobs-api" },
                 { label: "Google Videos API", link: "/api/google/videos-api" },
-                { label: "Google Images API", link: "#" },
-                { label: "Google Shopping API", link: "#" },
-                { label: "Google Short Video API", link: "#" },
-                { label: "Google Autocomplete API", link: "#" },
-                { label: "Google Forums API", link: "#" },
-                { label: "Google Locak API", link: "#" }
             ]
         },
         {
             label: "Bing Api",
-            // image: "/images/navBar/bing-api.png",
             children: [
                 { label: "Bing SERP API", link: "/api/bing/serp-api" },
                 { label: "Bing News API", link: "/api/bing/news-api" },
@@ -139,7 +154,6 @@ const productMenu = {
         },
         {
             label: "Yahoo Api",
-            // image: "/images/navBar/yahoo-api.png",
             children: [
                 { label: "Yahoo SERP API", link: "/api/yahoo/serp-api" },
                 { label: "Yahoo News API", link: "/api/yahoo/news-api" },
