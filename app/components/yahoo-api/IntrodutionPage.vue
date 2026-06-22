@@ -37,7 +37,7 @@ import BaseLink from '../ui/BaseLink.vue';
 
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-4 md:justify-start">
 
-                    <h1 class="text-center text-5xl font-bold leading-none md:text-left md:text-6xl">
+                    <h1 class="text-center text-4xl leading-none md:text-left">
                         <span class="text-blue-950">Yahoo</span> <span class="text-violet-500">SERP API</span>
                     </h1>
 
@@ -121,6 +121,5 @@ import BaseLink from '../ui/BaseLink.vue';
 
         </div>
     </div>
-
 
 </template>

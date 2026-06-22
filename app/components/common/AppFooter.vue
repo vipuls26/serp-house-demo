@@ -6,10 +6,9 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
 <template>
 
     <div class="bg-violet-950 w-full">
-        <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 pt-8">
+        <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 py-24">
 
             <div class="flex flex-col lg:flex-row justify-between gap-10">
-
 
                 <div class="w-full lg:w-5/12 xl:w-5/12">
 
@@ -46,14 +45,11 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
                     </div>
                 </div>
 
-
                 <hr class="border-white/20 lg:hidden">
-
 
                 <div class="w-full lg:w-7/12 xl:w-7/12">
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
 
                         <!-- api -->
                         <div class="text-white space-y-3">
@@ -65,7 +61,6 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
                             <p><a href="#" class="hover:underline">Yahoo API</a></p>
                         </div>
                         <hr class="border-white/20 md:hidden">
-
 
                         <!-- help and support -->
                         <div class="text-white space-y-3">
@@ -166,7 +161,6 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
                 </div>
 
             </div>
-
 
             <div class="mt-10 pt-6 border-t border-white/20">
 

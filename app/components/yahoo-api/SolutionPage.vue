@@ -2,10 +2,11 @@
 import BaseCheck from '../reusbale/BaseCheck.vue';
 import BaseLink from '../ui/BaseLink.vue';
 
+
 </script>
 
 <template>
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 py-24">
+    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-8 py-24">
 
         <div class="flex flex-col md:flex-row items-center justify-between w-full px-4 gap-8 pb-12">
 
@@ -43,23 +44,26 @@ import BaseLink from '../ui/BaseLink.vue';
         </div>
 
 
-        <!-- <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1.5fr] gap-8 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-            <div class="space-y-4">
-                <h2 class="text-2xl font-semibold text-blue-950">
+
+            <div class="space-y-4 border-r-0 sm:border-r-2 sm:border-violet-500">
+                <h2 class="text-lg text-center md:text-start font-semibold text-blue-950">
                     Enterprise Scaling
                 </h2>
 
-                <p class="text-gray-600">
+                <p class="text-gray-600 text-center md:text-start">
                     For industry leaders: elite data services for top-tier business requirements
                 </p>
 
-                <BaseLink name="Contact us" />
+                <div class="flex s:justify-center md:justify-start">
+                    <BaseLink name="Contact us" />
+                </div>
+
             </div>
-   
-            <div class="hidden md:block w-px self-stretch bg-violet-500"></div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
                 <div class="flex items-center gap-3">
                     <BaseCheck />
                     <p>Account manager</p>
@@ -91,10 +95,10 @@ import BaseLink from '../ui/BaseLink.vue';
                 </div>
             </div>
 
-        </div> -->
+        </div>
 
 
-        <div class="flex flex-col md:flex-row items-center justify-between px-4 gap-8 pb-12">
+        <div class="flex flex-col md:flex-row items-center justify-between px-4 gap-8 py-12">
 
             <div class="w-full md:w-1/2 flex justify-center">
                 <img src="/images/yahooSerpApi/yahoo-search-results-data.png" alt="yahoo search"

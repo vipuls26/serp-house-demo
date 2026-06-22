@@ -11,7 +11,7 @@
             <div class="w-full lg:w-1/2">
 
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <button class="w-full flex items-center justify-start text-left space-x-2.5"
+                    <button class="w-full flex items-center justify-start text-left space-x-2.5 cursor-pointer"
                         @click="toggleAccordion('faq1')">
                         <span class="text-2xl transition-transform duration-300 text-[#494343]"
                             :class="{ 'rotate-45 text-violet-500 ': activeFaq === 'faq1' }">
@@ -32,9 +32,8 @@
 
                 </div>
 
-
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <button class="w-full flex items-center justify-start text-left space-x-2.5"
+                    <button class="w-full flex items-center justify-start text-left space-x-2.5 cursor-pointer"
                         @click="toggleAccordion('faq2')">
                         <span class="text-2xl transition-transform duration-300 text-[#494343]"
                             :class="{ 'rotate-45 text-violet-500': activeFaq === 'faq2' }">
@@ -55,7 +54,7 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <button class="w-full flex items-center justify-start text-left space-x-2.5"
+                    <button class="w-full flex items-center justify-start text-left space-x-2.5 cursor-pointer"
                         @click="toggleAccordion('faq3')">
                         <span class="text-2xl transition-transform duration-300 text-[#494343]"
                             :class="{ 'rotate-45 text-violet-500': activeFaq === 'faq3' }">
@@ -76,7 +75,7 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <button class="w-full flex items-center justify-start text-left space-x-2.5"
+                    <button class="w-full flex items-center justify-start text-left space-x-2.5 cursor-pointer"
                         @click="toggleAccordion('faq4')">
                         <span class="text-2xl transition-transform duration-300 text-[#494343]"
                             :class="{ 'rotate-45 text-violet-500': activeFaq === 'faq4' }">
@@ -97,7 +96,7 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <button class="w-full flex items-center justify-start text-left space-x-2.5"
+                    <button class="w-full flex items-center justify-start text-left space-x-2.5 cursor-pointer"
                         @click="toggleAccordion('faq5')">
                         <span class="text-2xl transition-transform duration-300 text-[#494343]"
                             :class="{ 'rotate-45 text-violet-500': activeFaq === 'faq5' }">
@@ -118,7 +117,7 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <button class="w-full flex items-center justify-start text-left space-x-2.5"
+                    <button class="w-full flex items-center justify-start text-left space-x-2.5 cursor-pointer"
                         @click="toggleAccordion('faq6')">
                         <span class="text-2xl transition-transform duration-300 text-[#494343]"
                             :class="{ 'rotate-45 text-violet-500': activeFaq === 'faq6' }">
