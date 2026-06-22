@@ -13,3 +13,9 @@
         </div>
     </div>
 </template>
+
+<script setup>
+
+import BaseLogoCarousel from '../ui/BaseLogoCarousel.vue';
+
+</script>
