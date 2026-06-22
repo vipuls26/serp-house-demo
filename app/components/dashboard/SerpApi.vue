@@ -11,7 +11,7 @@ import BaseLink from '../ui/BaseLink.vue';
                 <div class="md:py-6">
                     <div class="flex flex-wrap items-center justify-center gap-3.75 md:justify-start">
 
-                        <p class="font-medium text-slate-900">
+                        <p class="font-medium text-slate-700">
                             Excellent
                         </p>
 
@@ -20,7 +20,7 @@ import BaseLink from '../ui/BaseLink.vue';
                             <img src="/images/homePage/stars-4.5.svg" alt="Trustpilot"
                                 class="w-full max-w-28 min-[1441px]:max-w-36" />
 
-                            <p class="font-medium text-slate-900">
+                            <p class="font-medium text-slate-700">
                                 4.7 review on
                             </p>
                         </NuxtLink>
@@ -28,7 +28,7 @@ import BaseLink from '../ui/BaseLink.vue';
                         <div class="flex items-center gap-2">
                             <img src="/images/homePage/one-star.png" alt="Trustpilot" class="max-w-6" />
 
-                            <p class="font-medium text-slate-900">
+                            <p class="font-medium text-slate-700">
                                 Trustpilot
                             </p>
                         </div>
@@ -91,21 +91,21 @@ import BaseLink from '../ui/BaseLink.vue';
 
                         <div class="flex items-center gap-2">
                             <i class="pi pi-check text-violet-500"></i>
-                            <span class="font-semibold text-slate-700">
+                            <span class="font-medium text-slate-700">
                                 No Captcha, no blocks
                             </span>
                         </div>
 
                         <div class="flex items-center gap-2">
                             <i class="pi pi-check text-violet-500"></i>
-                            <span class="font-semibold text-slate-700">
+                            <span class="font-medium text-slate-700">
                                 Enterprise Scaling
                             </span>
                         </div>
 
                         <div class="flex items-center gap-2">
                             <i class="pi pi-check text-violet-500"></i>
-                            <span class="font-semibold text-slate-700">
+                            <span class="font-medium text-slate-700">
                                 24/7 Support
                             </span>
                         </div>

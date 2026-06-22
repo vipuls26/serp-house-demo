@@ -77,21 +77,21 @@ import BaseLink from '../ui/BaseLink.vue';
 
                     <div class="flex items-center gap-2">
                         <i class="pi pi-check text-violet-500"></i>
-                        <span class="font-semibold text-slate-700">
+                        <span class="font-medium text-slate-700">
                             No Captcha, no blocks
                         </span>
                     </div>
 
                     <div class="flex items-center gap-2">
                         <i class="pi pi-check text-violet-500"></i>
-                        <span class="font-semibold text-slate-700">
+                        <span class="font-medium text-slate-700">
                             Enterprise Scaling
                         </span>
                     </div>
 
                     <div class="flex items-center gap-2">
                         <i class="pi pi-check text-violet-500"></i>
-                        <span class="font-semibold text-slate-700">
+                        <span class="font-medium text-slate-700">
                             24/7 Support
                         </span>
                     </div>

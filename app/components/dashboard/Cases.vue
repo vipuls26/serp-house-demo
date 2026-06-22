@@ -10,7 +10,7 @@ import BaseLink from '../ui/BaseLink.vue';
             <BaseLink varient="primary" link="/" name="Dive into Use Cases" />
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="flex flex-wrap gap-20 justify-center">
 
             <div class="flex flex-col items-center text-center">
                 <img src="/images/homePage/enterprise-scaling.png" class="h-14 md:h-20 w-auto" />

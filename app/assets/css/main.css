@@ -4,6 +4,9 @@
 
 @theme {
 
+    /* fonts */
+    --font-sans: "Poppins", sans-serif;
+
     /* mobile */
     --breakpoint-s: 320px;
     --breakpoint-m: 375px;

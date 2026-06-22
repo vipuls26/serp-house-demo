@@ -62,7 +62,7 @@ import BaseDescription from '../reusbale/BaseDescription.vue';
         </div>
 
         <div class="flex items-center pt-4 w-full">
-            <p class="text-base text-gray-600 px-8 text-center">Get real-time SERP data from Google, Bing & Yahoo — no
+            <p class="text-base text-slate-700 px-8 text-center">Get real-time SERP data from Google, Bing & Yahoo — no
                 blocks, no delays. With our Free SERP API, you
                 can extract search results and use them in your app right away.</p>
         </div>
@@ -71,21 +71,21 @@ import BaseDescription from '../reusbale/BaseDescription.vue';
 
             <div class="flex items-center gap-2 md:w-[45%]">
                 <BaseDescription />
-                <p class="text-slate-900 text-sm">
+                <p class="text-slate-700 text-sm">
                     Trusted by 500+ developers & SEO teams
                 </p>
             </div>
 
             <div class="flex items-center gap-1 md:w-[45%]">
                 <BaseDescription />
-                <p class="text-slate-900 text-sm">
+                <p class="text-slate-700 text-sm">
                     100% CAPTCHA and proxy management
                 </p>
             </div>
 
             <div class="flex items-center gap-1 md:w-[40%]">
                 <BaseDescription />
-                <p class="text-slate-900 text-sm">
+                <p class="text-slate-700 text-sm">
                     99.9% guaranteed API uptime
                 </p>
             </div>
