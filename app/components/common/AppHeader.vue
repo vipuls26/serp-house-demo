@@ -1,6 +1,6 @@
 <template>
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
-        <div class="mx-auto px-4 max-w-360 md:px-8 lg:px-8">
+        <BaseContainer>
 
             <div class="flex items-center justify-between h-20">
 
@@ -84,10 +84,10 @@
                 </div>
 
             </div>
-        </div>
+        </BaseContainer>
 
         <div v-show="isOpen"
-            class="lg:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl px-6 py-5 space-y-4">
+            class="lg:hidden absolute top-full left-0 w-full bg-slate-200 border-b border-slate-200 shadow-xl px-6 py-5 space-y-4">
             <BaseDropdown :item="productMenu" @close="isOpen = false" />
 
             <button class="w-full text-left py-2 hover:text-violet-500">
@@ -117,6 +117,8 @@
 </template>
 
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 
 import BaseLogo from '../reusbale/BaseLogo.vue';
 import BaseDropdown from '../ui/BaseDropdown.vue';

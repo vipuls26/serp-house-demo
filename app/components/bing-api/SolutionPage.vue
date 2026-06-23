@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseCheck from '../reusbale/BaseCheck.vue';
 import BaseLink from '../ui/BaseLink.vue';
 
@@ -6,7 +8,7 @@ import BaseLink from '../ui/BaseLink.vue';
 </script>
 
 <template>
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-8 py-24">
+    <BaseContainer class="pb-8 py-24">
 
         <div class="flex flex-col md:flex-row items-center justify-between w-full px-4 gap-8 pb-12">
 
@@ -177,5 +179,5 @@ import BaseLink from '../ui/BaseLink.vue';
             </div>
 
         </div>
-    </div>
+    </BaseContainer>
 </template>

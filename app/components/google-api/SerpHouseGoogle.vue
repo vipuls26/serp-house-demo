@@ -1,6 +1,10 @@
+<script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+</script>
+
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-2 xl:px-12 pb-4 space-y-6">
+    <BaseContainer class="pb-4 space-y-6">
 
         <div class="lg:hidden">
             <h1 class="text-center text-2xl md:text-3xl font-medium text-blue-950 pb-4">
@@ -114,6 +118,6 @@
 
 
 
-    </div>
+    </BaseContainer>
 
 </template>

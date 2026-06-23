@@ -1,10 +1,12 @@
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseUnderline from '../reusbale/BaseUnderline.vue';
 
 </script>
 
 <template>
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4">
+    <BaseContainer class="pb-4">
 
         <div class="flex items-center justify-center gap-x-2 px-8">
             <img src="/images/yahooSerpApi/yahoo-api-logo.png" alt="yahoo logo" class="h-6">
@@ -51,5 +53,5 @@ import BaseUnderline from '../reusbale/BaseUnderline.vue';
         </div>
 
 
-    </div>
+    </BaseContainer>
 </template>

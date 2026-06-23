@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseLogo from '../reusbale/BaseLogo.vue';
 
 </script>
@@ -6,7 +8,7 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
 <template>
 
     <div class="bg-violet-950 w-full">
-        <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 py-24">
+        <BaseContainer class="pb-4 py-24">
 
             <div class="flex flex-col lg:flex-row justify-between gap-10">
 
@@ -186,7 +188,7 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
 
             </div>
 
-        </div>
+        </BaseContainer>
     </div>
 
 </template>

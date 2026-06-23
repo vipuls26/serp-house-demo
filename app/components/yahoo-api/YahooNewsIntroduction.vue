@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseLink from '../ui/BaseLink.vue';
 
 </script>
 
 <template>
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6 py-12">
+    <BaseContainer class="pb-4 space-y-6 py-12">
 
         <div class="grid items-center gap-12 md:grid-cols-2">
             <div class="md:py-6">
@@ -73,5 +75,5 @@ import BaseLink from '../ui/BaseLink.vue';
             </div>
 
         </div>
-    </div>
+    </BaseContainer>
 </template>

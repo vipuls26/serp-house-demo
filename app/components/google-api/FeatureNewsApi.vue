@@ -1,6 +1,10 @@
+<script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+</script>
+
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6 py-8 my-20">
+    <BaseContainer class="pb-4 space-y-6 py-8 my-20">
 
         <!-- feature -->
         <div class="mb-10">
@@ -236,7 +240,7 @@
             </div>
         </div>
 
-    </div>
+    </BaseContainer>
 
 
 </template>

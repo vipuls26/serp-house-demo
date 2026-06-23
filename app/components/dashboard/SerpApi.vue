@@ -1,4 +1,6 @@
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseDescription from '../reusbale/BaseDescription.vue';
 import BaseLink from '../ui/BaseLink.vue';
 
@@ -6,7 +8,7 @@ import BaseLink from '../ui/BaseLink.vue';
 
 <template>
     <section class="bg-white">
-        <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16 py-12">
+        <BaseContainer class="space-y-16 py-12">
             <div class="grid items-center gap-12 md:grid-cols-2">
                 <div class="md:py-6">
                     <div class="flex flex-wrap items-center justify-center gap-3.75 md:justify-start">
@@ -134,6 +136,6 @@ import BaseLink from '../ui/BaseLink.vue';
                 </div>
 
             </div>
-        </div>
+        </BaseContainer>
     </section>
 </template>

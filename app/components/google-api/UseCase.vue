@@ -1,11 +1,13 @@
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseLink from '../ui/BaseLink.vue';
 
 </script>
 
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-8 space-y-12 py-12">
+    <BaseContainer class="pb-8 space-y-12 py-12">
 
         <h1 class="text-center text-blue-950 text-xl md:text-2xl">
             Use Cases of Google News API</h1>
@@ -114,10 +116,9 @@ import BaseLink from '../ui/BaseLink.vue';
             </div>
 
         </div>
-    </div>
+    </BaseContainer>
 
-    <div
-        class="mx-auto max-w-360 sm:px-6 lg:px-3 xl:px-16 pb-8 space-y-12  grid gap-8 rounded-3xl bg-white px-6 py-10 shadow-sm md:grid-cols-2 md:items-center md:px-10">
+    <BaseContainer class="pb-8 space-y-12 grid gap-8 rounded-3xl bg-white py-10 shadow-sm md:grid-cols-2 md:items-center">
 
         <div>
             <h2
@@ -143,6 +144,6 @@ import BaseLink from '../ui/BaseLink.vue';
             </div>
         </div>
 
-    </div>
+    </BaseContainer>
 
 </template>

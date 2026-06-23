@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseCheck from '../reusbale/BaseCheck.vue';
 import BaseLink from '../ui/BaseLink.vue';
 
@@ -6,7 +8,7 @@ import BaseLink from '../ui/BaseLink.vue';
 </script>
 
 <template>
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-8 py-24">
+    <BaseContainer class="pb-8 py-24">
 
         <div class="flex justify-center px-4">
             <h1 class="text-center text-blue-950 text-2xl">Google SERP API for any type of Structure JSON SERP data</h1>
@@ -288,5 +290,5 @@ import BaseLink from '../ui/BaseLink.vue';
 
         </div>
 
-    </div>
+    </BaseContainer>
 </template>

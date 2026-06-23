@@ -1,11 +1,13 @@
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseLink from '../ui/BaseLink.vue';
 
 </script>
 
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12">
+    <BaseContainer>
         <div class="flex md:flex-nowrap flex-wrap xl:py-22.5 lg:py-20 py-16 lg:gap-x-12 gap-x-9 gap-y-12">
             <div>
                 <img src="/images/homePage/easy-to-integrate.png" alt="easy-integrate" class="object-contain">
@@ -42,6 +44,6 @@ import BaseLink from '../ui/BaseLink.vue';
 
             </div>
         </div>
-    </div>
+    </BaseContainer>
 
 </template>

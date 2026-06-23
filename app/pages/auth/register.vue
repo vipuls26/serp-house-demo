@@ -1,5 +1,6 @@
 <script setup>
 
+import Banner from '~/components/auth/Banner.vue';
 import RegisterForm from '~/components/auth/RegisterForm.vue';
 
 definePageMeta({
@@ -9,41 +10,21 @@ definePageMeta({
 
 <template>
     <div
-        class="flex bg-white rounded-3xl w-11/12 max-w-6xl min-h-[650px] shadow-2xl mx-auto overflow-hidden">
+        class="flex bg-white rounded-3xl w-11/12 max-w-6xl shadow-2xl mx-auto overflow-hidden my-8 max-h-[calc(100vh-4rem)]">
 
-        
-        <div class="hidden md:flex flex-col w-1/2 items-center justify-center bg-slate-50 border-r border-slate-200 p-8">
-
-            <img
-                src="/images/serphouse-logo.png"
-                alt="SerpHouse Logo"
-                class="h-12 lg:h-14 w-auto mb-8" />
-
-            <img
-                src="/images/side-image.png"
-                alt="Register Banner"
-                class="w-full max-w-sm" />
+        <div
+            class="hidden md:flex flex-col w-1/2 items-center justify-center bg-slate-50 border-r border-slate-200 p-8">
 
             <div class="flex flex-col items-center gap-2 mt-8">
-                <h2 class="text-center text-2xl font-semibold text-slate-900">
-                    Easy and Fast Result
-                </h2>
-
-                <p class="text-center text-sm text-gray-600 max-w-sm">
-                    Each API request runs immediately with no waiting for results.
-                    Most requests return within a few seconds.
-                </p>
+                <Banner />
             </div>
         </div>
 
-        <div
-            class="w-full md:w-1/2 flex items-center justify-center px-6 py-10">
-
-          <RegisterForm />
-
+        <div class="w-full md:w-1/2 flex overflow-y-auto">
+            <div class="m-auto w-full">
+                <RegisterForm />
+            </div>
         </div>
 
     </div>
 </template>
-
-

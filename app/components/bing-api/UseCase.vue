@@ -1,5 +1,9 @@
+<script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+</script>
+
 <template>
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6 py-12">
+    <BaseContainer class="pb-4 space-y-6 py-12">
 
         <h1 class="text-center text-blue-950 text-xl md:text-2xl">Use Cases For Our SERP API</h1>
 
@@ -54,5 +58,5 @@
             </div>
 
         </div>
-    </div>
+    </BaseContainer>
 </template>
