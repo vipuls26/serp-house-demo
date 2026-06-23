@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseDescription from '../reusbale/BaseDescription.vue';
 
 </script>
 
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6">
+    <BaseContainer class="pb-4 space-y-6">
 
         <!-- logo -->
         <div class="max-w-3xl w-full mx-auto pt-8 pb-4">
@@ -92,5 +94,5 @@ import BaseDescription from '../reusbale/BaseDescription.vue';
 
         </div>
 
-    </div>
+    </BaseContainer>
 </template>

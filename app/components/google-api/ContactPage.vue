@@ -1,6 +1,6 @@
 <template>
 
-    <div class="mx-auto max-w-360 px-4  lg:px-3 xl:px-12 pb-4 space-y-6 py-12">
+    <BaseContainer class="pb-4 space-y-6 py-12">
         <h2 class="text-blue-950 text-center text-2xl font-medium">
             Scale Up Your Business with SERPHouse
         </h2>
@@ -46,11 +46,13 @@
 
         </div>
 
-    </div>
+    </BaseContainer>
 
 </template>
 
 
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseTick from '../reusbale/BaseTick.vue';
 </script>

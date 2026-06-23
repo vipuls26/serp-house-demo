@@ -1,6 +1,6 @@
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4">
+    <BaseContainer class="pb-4">
 
         <!-- btn -->
         <div class="flex flex-row items-center justify-center pt-8 gap-6">
@@ -29,10 +29,12 @@
             </div>
         </div>
 
-    </div>
+    </BaseContainer>
 </template>
     
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 
 import BaseLogoCarousel from '../ui/BaseLogoCarousel.vue';
 

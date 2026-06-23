@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseDescription from '../reusbale/BaseDescription.vue';
 import BaseLink from '../ui/BaseLink.vue';
 
@@ -6,7 +8,7 @@ import BaseLink from '../ui/BaseLink.vue';
 
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6 py-8 my-20">
+    <BaseContainer class="pb-4 space-y-6 py-8 my-20">
 
         <!-- feature -->
         <div class="mb-10">
@@ -133,8 +135,7 @@ import BaseLink from '../ui/BaseLink.vue';
         </div>
 
         <!-- try it -->
-        <div
-            class="mx-auto max-w-360 sm:px-6 lg:px-3 xl:px-16 pb-8 space-y-12  grid gap-8 rounded-3xl bg-white px-6 py-10 shadow-sm md:grid-cols-2 md:items-center md:px-10">
+        <BaseContainer class="pb-8 space-y-12 grid gap-8 rounded-3xl bg-white py-10 shadow-sm md:grid-cols-2 md:items-center">
 
             <div>
                 <h2
@@ -164,9 +165,9 @@ import BaseLink from '../ui/BaseLink.vue';
                 </div>
             </div>
 
-        </div>
+        </BaseContainer>
 
-    </div>
+    </BaseContainer>
 
 
 </template>

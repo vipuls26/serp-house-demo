@@ -1,6 +1,10 @@
+<script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+</script>
+
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16 py-12">
+    <BaseContainer class="space-y-16 py-12">
 
         <div class="flex flex-col items-center justify-center text-center p-6 max-w-2xl mx-auto gap-4">
             <div>
@@ -72,6 +76,6 @@
 
         </div>
         
-    </div>
+    </BaseContainer>
 
 </template>

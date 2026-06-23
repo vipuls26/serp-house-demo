@@ -2,8 +2,15 @@
     <div class="relative">
 
         <button v-if="item.children" @click.stop="toggleDropdown" :class="[
-            'flex items-center w-full px-5 py-3 text-[15px] font-medium text-slate-600 hover:text-violet-600 transition-colors duration-200',
-            depth === 0 ? 'space-x-1' : 'justify-between'
+            'flex items-center w-full px-5 py-3 text-[15px] font-medium transition-colors duration-200 rounded-xl',
+
+            isActive
+                ? 'text-violet-600 bg-violet-50'
+                : 'text-slate-600 hover:text-violet-600 hover:bg-slate-50',
+
+            depth === 0
+                ? 'space-x-1'
+                : 'justify-between'
         ]" type="button">
             <span>{{ item.label }}</span>
 
@@ -14,9 +21,13 @@
             ]" />
         </button>
 
-        <NuxtLink v-else :to="item.link" @click="closeDropdown"
-            class="block px-5 py-3 text-[15px] font-medium text-slate-600 hover:text-violet-600 hover:bg-slate-50 transition-colors duration-200 whitespace-nowrap overflow-y-auto"
-            active-class="text-violet-600 bg-violet-50 font-semibold">
+        <NuxtLink v-else :to="item.link" @click="closeDropdown" :class="[
+            'block px-5 py-3 text-[15px] font-medium transition-colors duration-200 whitespace-nowrap rounded-xl',
+
+            route.path === item.link
+                ? 'text-violet-600 bg-violet-50 font-semibold'
+                : 'text-slate-600 hover:text-violet-600 hover:bg-slate-50'
+        ]">
             <span>{{ item.label }}</span>
         </NuxtLink>
 
@@ -25,22 +36,20 @@
             leave-active-class="transition-all duration-150 ease-in"
             leave-from-class="opacity-100 translate-y-0 scale-100" leave-to-class="opacity-0 -translate-y-2 scale-95">
             <div v-show="item.children && isOpen" :class="[
-                'bg-white py-2',
+                'bg-slate-50 py-2',
                 depth === 0
-                    ? 'absolute left-0 top-full min-w-48 border border-slate-200 rounded-2xl shadow-2xl'
-                    : 'mt-2 ml-4 border-l-2 border-slate-100 pl-3'
+                    ? 'absolute left-0 top-full min-w-48 border border-slate-200 rounded-2xl shadow-xl max-h-80 overflow-y-auto'
+                    : 'mt-2 ml-4 border-l-2 border-slate-100 pl-3 max-h-64 overflow-y-auto'
             ]">
                 <BaseDropdown v-for="(child, i) in item.children" :key="i" :item="child" :depth="depth + 1"
                     @close="closeDropdown" />
             </div>
         </Transition>
+        
     </div>
 </template>
 
 <script setup>
-
-import { computed } from 'vue'
-
 const props = defineProps({
     item: {
         type: Object,
@@ -52,11 +61,29 @@ const props = defineProps({
     }
 })
 
+const route = useRoute()
+
 const activeChain = useState('active-dropdown-chain', () => [])
 
-const isOpen = computed(() => activeChain.value[props.depth] === props.item.label)
-
 const emit = defineEmits(['close'])
+
+const hasActiveChild = (item) => {
+    if (item.link === route.path) {
+        return true
+    }
+
+    if (item.children?.length) {
+        return item.children.some(child => hasActiveChild(child))
+    }
+
+    return false
+}
+
+const isActive = computed(() => hasActiveChild(props.item))
+
+const isOpen = computed(() =>
+    activeChain.value[props.depth] === props.item.label
+)
 
 const closeDropdown = () => {
     activeChain.value = []
@@ -72,6 +99,13 @@ const toggleDropdown = () => {
         activeChain.value = newChain
     }
 }
+
+watch(
+    () => route.path,
+    () => {
+        activeChain.value = []
+    }
+)
 
 defineOptions({
     name: 'BaseDropdown'

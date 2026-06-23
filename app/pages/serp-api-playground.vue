@@ -1,5 +1,9 @@
+<script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+</script>
+
 <template>
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6">
+    <BaseContainer class="pb-4 space-y-6">
 
         <div class="py-8 md:px-8">
             <h1 class="text-center text-blue-950 text-3xl font-medium pt-4 ">
@@ -110,5 +114,5 @@
             </div>
 
         </div>
-    </div>
+    </BaseContainer>
 </template>

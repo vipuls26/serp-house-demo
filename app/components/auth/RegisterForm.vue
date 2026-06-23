@@ -6,7 +6,7 @@ import BaseLogo from '../reusbale/BaseLogo.vue';
 </script>
 
 <template>
-    <div class="w-full max-w-md">
+    <div class="w-full max-w-md px-5 py-8 sm:px-8 sm:py-10 md:px-10 md:py-12 lg:px-12 lg:py-14 mx-auto">
 
         <div class="block md:hidden mb-6">
             <div class="flex justify-center">

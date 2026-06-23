@@ -1,4 +1,6 @@
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseArrow from '../reusbale/BaseArrow.vue';
 import BaseLink from '../ui/BaseLink.vue';
 
@@ -6,7 +8,7 @@ import BaseLink from '../ui/BaseLink.vue';
 
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6">
+    <BaseContainer class="pb-4 space-y-6">
 
 
         <h1 class="text-center text-2xl font-medium text-blue-950 mb-8">
@@ -169,5 +171,5 @@ import BaseLink from '../ui/BaseLink.vue';
         </div>
 
 
-    </div>
+    </BaseContainer>
 </template>

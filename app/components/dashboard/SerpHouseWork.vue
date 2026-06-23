@@ -1,4 +1,6 @@
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 
 import BaseLogoCarousel from '../ui/BaseLogoCarousel.vue';
 
@@ -6,7 +8,7 @@ import BaseLogoCarousel from '../ui/BaseLogoCarousel.vue';
 
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16 py-12">
+    <BaseContainer class="space-y-16 py-12">
 
         <h2 class="text-center text-blue-950 s:text-sm m:text-base l:text-lg md:text-xl">
             Used by the best developers and teams around the world
@@ -14,9 +16,9 @@ import BaseLogoCarousel from '../ui/BaseLogoCarousel.vue';
 
         <BaseLogoCarousel class="mt-10" />
 
-    </div>
+    </BaseContainer>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16 py-12">
+    <BaseContainer class="space-y-16 py-12">
 
         <div class="rounded-2xl py-12 lg:px-12 lg:py-14">
 
@@ -46,7 +48,7 @@ import BaseLogoCarousel from '../ui/BaseLogoCarousel.vue';
             </div>
 
         </div>
-    </div>
+    </BaseContainer>
 
     <div class="bg-violet-500 px-6 py-5">
         <div class="mx-auto max-w-6xl">

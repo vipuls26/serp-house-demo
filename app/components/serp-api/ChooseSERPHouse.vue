@@ -1,5 +1,9 @@
+<script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+</script>
+
 <template>
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4">
+    <BaseContainer class="pb-4">
 
         <div class="pb-8">
             <h1 class="text-blue-950 s:text-lg m:text-2xl text-center text-2xl font-medium">Why Teams Choose SERPHouse
@@ -74,5 +78,5 @@
             </div>
 
         </div>
-    </div>
+    </BaseContainer>
 </template>

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="mx-auto max-w-360 px-4 sm:px-6 lg:px-3 xl:px-12 pb-4 space-y-6 py-12">
+    <BaseContainer class="pb-4 space-y-6 py-12">
         <h2 class="text-blue-950 text-bolder text-center text-2xl md:text-3xl mx-auto pb-4">
             What Do Our Customers Say?
         </h2>
@@ -37,10 +37,12 @@
             <BaseReviewCard />
         </div>
 
-    </div>
+    </BaseContainer>
 </template>
 
 <script setup>
+import BaseContainer from '~/components/ui/BaseContainer.vue';
+
 import BaseReviewCard from '../reusbale/BaseReviewCard.vue';
 
 </script>
